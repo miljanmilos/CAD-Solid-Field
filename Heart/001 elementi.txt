@@ -1,0 +1,17 @@
+Left Atrium 
+elementi 1-4767
+
+Mitral Valve
+elementi 4768-5898
+
+Left Chamber
+elementi 5899-8906
+
+Aorta Valve
+elementi 8907-9393
+
+Aorta
+elementi 9394-10553
+
+Solid
+elementi 10554-29054

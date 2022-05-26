@@ -1,0 +1,177 @@
+C /1/ HEADING CARD (80A1)
+C NASLOV
+ MODELING DIFFUSION WITHIN NDS-MD DEVICE
+C /2/ FORMAT FOR INPUT DATA (free format)
+C INDFOR
+    2    2    1    1
+C NANOCHANNEL PARAM'S: ELNANO,DNANO,HTNANO,HBNANO,WNANO,AKABS (6E10.4)/
+  9.35e-01  9.35e-01  0.00e+00  0.00e+00  1.00e+00  0.00e+00
+C RESERVOIR PARAM'S:ELLEFT,DLEFT,ELRIGHT,DRIGHT,ELLFX,ELRFX,HLFY,HRFY (8E10.4)
+  1.00e+01  1.00e+00  1.00e+01  1.00e+00  1.00e-01  1.00e-01  1.00e-01  1.00e-01
+C BIASLX,BIASLY,BIASRX,BIASRY,AMOLAR,DMOLECULE (5E10.4)
+  1.00e+00  1.00e+00  1.00e+00  1.00e+00  1.00e+02  5.00e-03
+C NXNANO,NYNANO,MESHNANO,ISYMNANO,NSCALE,NSCALERES,MINUTTIME,IAXISYM,NBOUND,IABSORB (10I5)
+    5    5    1    1    1    1    0    0    1    0
+C INDRL,INDRR,NLX,NLY,NRX,NRY,NYHB,NYHT,NLFX,NRFX,NLFY,NRFY,NDIFLU,NDIFTU(12I5)
+    0    0    0    0    0    0    0    0    0    0    0    0
+C NXDIFNANO,NCDIFNANO,NXDIFUP,NCDIFUP,NXDIFIN,NXDIFOUT,NCDIFIN,NCDIFOUT (8I5)
+   11    4    0    0    0    0    0    0
+C IANYDIFB,IANCDIFB,IANYDIFU,IANCDIFU,IANYDIFIN,IANCDIFIN,IANYDIFOUT,IANCDIFOUT (8I5)
+   11    4    0    0    0    0    0    0
+C  BOUNDARY DATA: DIVISION X, X-CCORDINATE, RADIUS; FROM 1,NBOUND
+    5    0.9351    0.4676
+C /3/ BASIC DATA FOR THE PROBLEM (10I5)
+C NP,NGET,NMATT,NSTAC,NPER,NPRINT,IANIZ,NULAZ,ITOR,IGRAF
+        36    1    1    1    1   -1    0    1    0    1    0    0    0  
+C /4/ BASIC DATA FOR THE PROBLEM (4I5,2F10.0,I5)
+C INTEB,INDSC,IFORM,MAXIT,EPSTA,EPSTR,NJRAP
+    0    0    0   20  0.000000  0.050000    2    0
+C /5/ DATA FOR RESTART (3I5,D15.8)
+C IREST,NCZK,NCZR,VREMO
+    1    0    0
+C /6/ DATA FOR TIME STEPS
+C   NKDT(I)/DTDT(I)    (I=1,NPER)
+         2
+  1.00e+00
+C /7/ DATA FOR NODAL POINT DATA (I5,3X,I2,3F10.2,10X,I5)
+C N,IDT(N),CORD(N,1),CORD(N,2),CORD(N,3),KORC
+         1   -1        0.000000e+00   0.000000e+00   0.000000e+00                   0
+         2   -1        0.000000e+00   1.870280e-01   0.000000e+00                   0
+         3   -1        0.000000e+00   3.740560e-01   0.000000e+00                   0
+         4   -1        0.000000e+00   5.610840e-01   0.000000e+00                   0
+         5   -1        0.000000e+00   7.481120e-01   0.000000e+00                   0
+         6   -1        0.000000e+00   9.351400e-01   0.000000e+00                   0
+         7    0        1.870280e-01   0.000000e+00   0.000000e+00                   0
+         8    0        1.870280e-01   1.870280e-01   0.000000e+00                   0
+         9    0        1.870280e-01   3.740560e-01   0.000000e+00                   0
+        10    0        1.870280e-01   5.610840e-01   0.000000e+00                   0
+        11    0        1.870280e-01   7.481120e-01   0.000000e+00                   0
+        12    0        1.870280e-01   9.351400e-01   0.000000e+00                   0
+        13    0        3.740560e-01   0.000000e+00   0.000000e+00                   0
+        14    0        3.740560e-01   1.870280e-01   0.000000e+00                   0
+        15    0        3.740560e-01   3.740560e-01   0.000000e+00                   0
+        16    0        3.740560e-01   5.610840e-01   0.000000e+00                   0
+        17    0        3.740560e-01   7.481120e-01   0.000000e+00                   0
+        18    0        3.740560e-01   9.351400e-01   0.000000e+00                   0
+        19    0        5.610840e-01   0.000000e+00   0.000000e+00                   0
+        20    0        5.610840e-01   1.870280e-01   0.000000e+00                   0
+        21    0        5.610840e-01   3.740560e-01   0.000000e+00                   0
+        22    0        5.610840e-01   5.610840e-01   0.000000e+00                   0
+        23    0        5.610840e-01   7.481120e-01   0.000000e+00                   0
+        24    0        5.610840e-01   9.351400e-01   0.000000e+00                   0
+        25    0        7.481120e-01   0.000000e+00   0.000000e+00                   0
+        26    0        7.481120e-01   1.870280e-01   0.000000e+00                   0
+        27    0        7.481120e-01   3.740560e-01   0.000000e+00                   0
+        28    0        7.481120e-01   5.610840e-01   0.000000e+00                   0
+        29    0        7.481120e-01   7.481120e-01   0.000000e+00                   0
+        30    0        7.481120e-01   9.351400e-01   0.000000e+00                   0
+        31   -1        9.351400e-01   0.000000e+00   0.000000e+00                   0
+        32   -1        9.351400e-01   1.870280e-01   0.000000e+00                   0
+        33   -1        9.351400e-01   3.740560e-01   0.000000e+00                   0
+        34   -1        9.351400e-01   5.610840e-01   0.000000e+00                   0
+        35   -1        9.351400e-01   7.481120e-01   0.000000e+00                   0
+        36   -1        9.351400e-01   9.351400e-01   0.000000e+00                   0
+C
+C /14/ GENERAL DATA ABOUT FIBRE SETS
+C  NSETS,IEHM,NFIT,NFITSTEP,NFITMAX,FITERR,IFITX,IFITY,IFITZ,IDEG,IHEQ,IDCC,IDIAM,IBOTH,ICONV,VSCALE(5I5,E10.2,8I5,E10.2)
+   -1    0    0   20   20  1.00e-03    0    0    0    1    0    0    0    0    0  1.00e+00
+C  D1START,D2START(2E16.4) - WHEN 'IDCC = 0'
+    2.860000e+02    2.860000e+02
+C /8/ ELEMENT GROUP DATA (4I5)
+C NETIP,NET,INDAX,IZIP
+    2        25    0    0
+C /8-2/ DATA FOR 2D ELEMENT GROUP (8I5,F10.0)
+C a) Card with data about 2D element
+C NMAT2D,MAT2D,NP2DMX,IPR2DC,IPTG2,NGAU2X,NGAU2Y,NTHIC,THIC
+    1         4    0    0    2    2    0  1.000000
+C b) Data for each element in group (11I5,F10.0)
+C NN,(NEL(NN,I),I=1,4),NMAT,NQQ,KORE,NBEG,IPRCO,IPGS,THI
+C (NEL(NN,I),I=5,9)
+       1       1       7       8       2    1    0    0    0    0    0  1.000000
+       2       7      13      14       8    1    0    0    0    0    0  1.000000
+       3      13      19      20      14    1    0    0    0    0    0  1.000000
+       4      19      25      26      20    1    0    0    0    0    0  1.000000
+       5      25      31      32      26    1    0    0    0    0    0  1.000000
+       6       2       8       9       3    1    0    0    0    0    0  1.000000
+       7       8      14      15       9    1    0    0    0    0    0  1.000000
+       8      14      20      21      15    1    0    0    0    0    0  1.000000
+       9      20      26      27      21    1    0    0    0    0    0  1.000000
+      10      26      32      33      27    1    0    0    0    0    0  1.000000
+      11       3       9      10       4    1    0    0    0    0    0  1.000000
+      12       9      15      16      10    1    0    0    0    0    0  1.000000
+      13      15      21      22      16    1    0    0    0    0    0  1.000000
+      14      21      27      28      22    1    0    0    0    0    0  1.000000
+      15      27      33      34      28    1    0    0    0    0    0  1.000000
+      16       4      10      11       5    1    0    0    0    0    0  1.000000
+      17      10      16      17      11    1    0    0    0    0    0  1.000000
+      18      16      22      23      17    1    0    0    0    0    0  1.000000
+      19      22      28      29      23    1    0    0    0    0    0  1.000000
+      20      28      34      35      29    1    0    0    0    0    0  1.000000
+      21       5      11      12       6    1    0    0    0    0    0  1.000000
+      22      11      17      18      12    1    0    0    0    0    0  1.000000
+      23      17      23      24      18    1    0    0    0    0    0  1.000000
+      24      23      29      30      24    1    0    0    0    0    0  1.000000
+      25      29      35      36      30    1    0    0    0    0    0  1.000000
+C
+C /13/ DATA ABOUT DIFFUSION COEFFICIENT
+C max number of points in any table (I5)
+    2
+C FUNCTIONS AND TABLES FOR ALL MATERIALS 2I5/2E20.6
+C MATERIAL  1
+    1    2
+        0.000000e+00        2.860000e+02
+        2.000000e+01        2.860000e+02
+C  DATA FOR FACTORS FOR DIFF COEFFICIENT - NANOCHANNEL
+C  DISTANCES 8e10.0
+  0.00e+00  5.00e-01  1.50e+00  2.50e+00  3.50e+00  4.50e+00  5.50e+00  6.50e+00
+  7.50e+00  8.50e+00  9.50e+00
+C  CONCENTRATIONS 8e10.0
+  0.00e+00  8.00e-01  1.60e+00  2.40e+00
+C  TABLE
+  0.00e+00  0.00e+00  0.00e+00  0.00e+00
+  6.90e-02  4.30e-02  3.00e-02  4.20e-02
+  4.61e-01  3.66e-01  2.73e-01  2.80e-01
+  8.56e-01  7.72e-01  7.07e-01  6.73e-01
+  9.61e-01  9.17e-01  8.81e-01  8.50e-01
+  9.88e-01  9.66e-01  9.47e-01  9.27e-01
+  9.97e-01  9.88e-01  9.79e-01  9.67e-01
+  9.99e-01  9.96e-01  9.92e-01  9.87e-01
+  1.00e+00  9.99e-01  9.97e-01  9.94e-01
+  1.00e+00  1.00e+00  9.99e-01  9.98e-01
+  1.00e+00  1.00e+00  1.00e+00  1.00e+00
+C  DATA FOR FACTORS FOR DIFF COEFFICIENT - NANOCHANNEL - ANISOTROPY
+C  DISTANCES 8e10.0
+  0.00e+00  5.00e-01  1.50e+00  2.50e+00  3.50e+00  4.50e+00  5.50e+00  6.50e+00
+  7.50e+00  8.50e+00  9.50e+00
+C  CONCENTRATIONS 8e10.0
+  0.00e+00  8.00e-01  1.60e+00  2.40e+00
+C  TABLE
+  0.00e+00  0.00e+00  0.00e+00  0.00e+00
+  6.90e-02  4.30e-02  3.00e-02  4.20e-02
+  4.61e-01  3.66e-01  2.73e-01  2.80e-01
+  8.56e-01  7.72e-01  7.07e-01  6.73e-01
+  9.61e-01  9.17e-01  8.81e-01  8.50e-01
+  9.88e-01  9.66e-01  9.47e-01  9.27e-01
+  9.97e-01  9.88e-01  9.79e-01  9.67e-01
+  9.99e-01  9.96e-01  9.92e-01  9.87e-01
+  1.00e+00  9.99e-01  9.97e-01  9.94e-01
+  1.00e+00  1.00e+00  9.99e-01  9.98e-01
+  1.00e+00  1.00e+00  1.00e+00  1.00e+00
+C
+C DATA FOR PRESCRIBED VALUES AT INLET AND OUTLET SURFACE
+C
+C NPIN2,NPOUT2,VOLINL,VOLOUT,NPINT2P,NPOUT2P,NPINT2V,NPOUT2V (2I5,2E15.5, 4I5)
+    2    2    1.00000e+04    1.00000e+04
+C CONCENTRATION VS TIME FOR INLET OF MACROCHANNEL
+        0.000000e+00        2.000000e-01
+        2.000000e+01        1.000000e+01
+C CONCENTRATION VS TIME FOR OUTLET SURFACE
+        0.000000e+00        1.000000e-01
+        2.000000e+01        9.900000e+00
+C
+C DATA ABOUT BOUNDARY AND INITIAL CONDITIONS: NPOC,NQP,MAXTQP (14I5) 
+    0    0    0
+C INITIAL CONCENTRATION ( FOR NPOC.EQ.0 OR NPOC.EQ.1) ONE LINE FOR CINITAL (E10.4)
+ 0.000e+00
+C /16/ FINAL CARD (A4)
+STOP

@@ -1,0 +1,134 @@
+C /1/ HEADING CARD (80A1)
+C NASLOV
+ DIFFUSION THROUGH PLGA/PCL IMPLANT
+C /2/ FORMAT FOR INPUT DATA (free format)
+C INDFOR, NDS, NANOCH, ISOLVER
+    2    3    1    2
+C IMPLANT PARAM'S: ELPLGA,DEPTH,WIDTH,ELPCL,AMOLAR,DMOLECULE  (6E10.4)
+  8.00e+01  9.00e+01  9.00e+01  1.60e+02  1.00e+02  1.00e-03
+C NXPLGA, NY, NZ, NXPCL, MINUTTIME (10I5)
+    1    1    1    1    0    0
+C /3/ BASIC DATA FOR THE PROBLEM (10I5)
+C NP,NGET,NMATT,NSTAC,NPER,NPRINT,IANIZ,NULAZ,ITOR,IGRAF
+        10    3    2    1    1   -1    0    1    0    1    0    0
+C /4/ BASIC DATA FOR THE PROBLEM (4I5,2F10.0,I5)
+C INTEB,INDSC,IFORM,MAXIT,EPSTA,EPSTR,NJRAP
+    0    0    0   20  0.000000  0.050000    2    0
+C /5/ DATA FOR RESTART (3I5,D15.8)
+C IREST,NCZK,NCZR,VREMO
+    1    0    0
+C /6/ DATA FOR TIME STEPS
+C   NKDT(I)/DTDT(I)    (I=1,NPER)
+         2
+  1.00e+00
+C /7/ DATA FOR NODAL POINT DATA (I5,3X,I2,3F10.2,10X,I5)
+C N,IDT(N),CORD(N,1),CORD(N,2),CORD(N,3),KORC
+         1    0        0.000000e+00   0.000000e+00   9.000000e+01                   0
+         2    0        0.000000e+00   0.000000e+00   0.000000e+00                   0
+         3    0        0.000000e+00   9.000000e+01   9.000000e+01                   0
+         4    0        0.000000e+00   9.000000e+01   0.000000e+00                   0
+         5    1        8.000000e+01   0.000000e+00   9.000000e+01                   0
+         6    1        8.000000e+01   0.000000e+00   0.000000e+00                   0
+         7    1        8.000000e+01   9.000000e+01   9.000000e+01                   0
+         8    1        8.000000e+01   9.000000e+01   0.000000e+00                   0
+         9    0        5.000000e+00   5.000000e+00   0.000000e+00                   0
+        10    0        5.000000e+00   5.000000e+00   9.000000e+01                   0
+C
+C /14/ GENERAL DATA ABOUT FIBRE SETS
+C  NSETS,IEHM,NFIT,NFITSTEP,NFITMAX,FITERR,IFITX,IFITY,IFITZ,IDEG,IHEQ,IDCC,IDIAM,IBOTH,ICONV,VSCALE(5I5,E10.2,8I5,E10.2)
+    1    0    0   20   20  1.00e-03    0    0    0    1    0    0    0    0
+C  D1START,D2START(2E16.4) - WHEN 'IDCC = 0'
+    6.900000e+02    6.900000e+02
+C  /14-1/ DATA ABOUT FIBRE SET 
+C  NSETID,NUMFIB,IANISY,NFIBTYPE,DIAMETER,LENGTH,HMAX(4I5,3E10.5)
+    1    1    0    0  5.00e+00  4.47e+00  9.50e-03
+C BOXSTARTX,BOXSTARTY,BOXSTARTZ,BOXENDX,BOXENDY,BOXENDZ (6E10.5)
+  5.00e+00  5.00e+00  0.00e+00  5.00e+01  6.00e+01  4.50e+01
+C NCIR,NAXI,NRAD,NBOXX,NBOXY,NBOXZ, FVECTX, FVECTY, FVECTZ (6I5,3E10.5)
+    1    1    1  0.00e+00  0.00e+00  9.00e+01
+C  NFIBID, NPOINTS, DIAMETER (2I5, E10.3)
+    1    2  5.00e+00
+C  DATA ABOUT FIBRE POINTS
+C  ID, X, Y, Z (I5,3E10.0) 
+    1  5.00e+00  5.00e+00  0.00e+00
+    2  5.00e+00  5.00e+00  9.00e+01
+C  DATA FOR CORRECTION FACTORS FOR FIBRE SET - ANISOTROPY X 
+C  NXDIF,NCDIF (2I5)
+   11    4
+C  DISTANCES 8e10.0
+  0.00e+00  5.00e-01  1.50e+00  2.50e+00  3.50e+00  4.50e+00  5.50e+00  6.50e+00
+  7.50e+00  8.50e+00  9.50e+00
+C  CONCENTRATIONS 8e10.0
+  0.00e+00  9.00e-01  1.90e+00  3.70e+00
+C  TABLE
+  0.00e+00  0.00e+00  0.00e+00  0.00e+00
+  6.90e-02  4.30e-02  3.00e-02  4.20e-02
+  4.61e-01  3.66e-01  2.73e-01  2.80e-01
+  8.56e-01  7.72e-01  7.07e-01  6.73e-01
+  9.61e-01  9.17e-01  8.81e-01  8.50e-01
+  9.88e-01  9.66e-01  9.47e-01  9.27e-01
+  9.97e-01  9.88e-01  9.79e-01  9.67e-01
+  9.99e-01  9.96e-01  9.92e-01  9.87e-01
+  1.00e+00  9.99e-01  9.97e-01  9.94e-01
+  1.00e+00  1.00e+00  9.99e-01  9.98e-01
+  1.00e+00  1.00e+00  1.00e+00  1.00e+00
+C /8-3/ DATA FOR 3D ELEMENT GROUP (8I5)
+C NETIP,NET,INDAX,IZIP (I5,I10,2I5)
+    3         1    0    0
+C a) Card with data about 3D element
+C NMAT3d,MAT3D,NP3DMX,IPR3DC,IPRTG3,NGAUSX,NGAUSY,NGAUSZ
+    1         8
+C b) Data for each element in group (15I5)
+C NN,(NEL(NN,I),I=1,8),NMAT,NQQ,KORE,NBEG,IPRCO,IPGS
+       1       8       7       5       6       4       3       1       2  1  0  0  0  0  0
+C /8-3/ DATA FOR 1D ELEMENT GROUP (8I5)
+C NETIP,NET,INDAX,IZIP,ISUB4,I4NODES (I5,I10,3I5)
+    4         2    0    0    0    0
+C a) Card with data about 1D RADIAL ELEMENT
+C NSUBEL4MX,NP4DMX,CFIBER0,IPARTIT (2I5,E10.0,I5)
+    1    2  3.00e+00    0
+C b) Data for each element in group
+C NN,DDIF(NN),ELL(NN),RR(NN),ISUBEL(NN),NODE2D3D,CENTERX,CENTERY,CENTERZ(I8,7X,3E10.4,2I5,3E10.4)
+C / NEL(NN,I),I=1,10)  (10I8)
+       1         1.00e+01  4.50e+01  2.50e+00       1       2  5.00e+00  5.00e+00  0.00e+00  1.00e+00
+       9       2
+       2         1.00e+01  4.50e+01  2.50e+00       1       1  5.00e+00  5.00e+00  9.00e+01  1.00e+00
+      10       1
+C /8-3/ DATA FOR 1D ELEMENT GROUP (8I5)
+C NETIP,NET,INDAX,IZIP(I5,I10,3I5)
+    1         1    0    0
+C MAT1D,NP1DMX,IPR1DC,IPTG1,NGAU1X
+    1         2    0    0    0
+C b) Data for each element in group
+C NN,NEL(NN,I),I=1,10) (3I8)
+       1       9      10     0    0    0    0    0    0  1.96e+01
+C
+C /13/ DATA ABOUT DIFFUSION COEFFICIENT
+C max number of points in any table (I5)
+    2
+C FUNCTIONS AND TABLES FOR ALL MATERIALS 2I5/2E20.6
+C MATERIAL  1
+    1    2
+        0.000000e+00        4.000000e+02
+        1.000000e+02        4.000000e+02
+C MATERIAL  2
+    2    2
+        0.000000e+00        4.000000e+02
+        1.000000e+02        4.000000e+02
+C
+C DATA FOR PRESCRIBED VALUES AT INLET AND OUTLET SURFACE
+C
+C NPOUT2(I5)
+    1
+C CONCOUT0
+  0.00000e+00
+C TIME FUNCTION FOR DIFFUSION COEFFICIENT
+C IDIFUN, IPOINTS (2I5)
+    0    0    2
+C
+C DATA ABOUT BOUNDARY AND INITIAL CONDITIONS: NPOC,NQP,MAXTQP (14I5) 
+    0    0    0    0    0    0    0    0    0    0    0
+C INITIAL CONCENTRATION ( FOR NPOC.EQ.0 OR NPOC.EQ.1) ONE LINE FOR CINITAL (E10.4)
+ 0.000e+00
+C /16/ FINAL CARD (A4)
+STOP

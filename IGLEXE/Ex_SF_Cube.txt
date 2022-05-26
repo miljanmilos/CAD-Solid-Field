@@ -1,0 +1,385 @@
+#SF
+# RBC List (Number of cells)
+    0
+# Cancer cell List (Number of cells)
+    0
+# Beads List (Number of cells)
+    0
+# Complex Cell List (Number of cells)
+    0
+# Materials
+    1
+     ID, Type, bMultiLin
+    1    0    0
+   Density,    Young's,    Poisson
+   0.000e+00   1.000e+03   4.900e-01
+# Fluid Properties
+ MaxNodes, MaxElems, MaxLoads, bAxiSymm, bFluidDomain
+   20000   20000    1000    0    0
+  MaxArea,    Density,    Viscosity,  Gravity X,  Gravity Y,  SGravity X,  SGravity Y
+   1.000e+00   1.000e-06   1.000e+00   0.000e+00   0.000e+00   0.000e+00  -9.810e+06
+# Fluid Contour Data (Number of points, Ind Friction, Friction Coefficient, Uniform, nDivX, nDivY)
+    0    0   0.000e+00   0.000e+00   0.000e+00    0    1    1    1
+# Fluid Velocity Function - Number of Functions
+    2
+# nFunID, NumPoint
+    1    3
+  0.00e+00  1.00e+00
+  5.00e-01  1.00e+00
+  1.10e+00  1.00e+00
+# nFunID, NumPoint
+    2    3
+  0.00e+00  0.00e+00
+  5.00e-01  1.00e-01
+  1.10e+00  0.00e+00
+# Number of Islands
+    0
+# Solid Remeshing Data
+ IndRem,MaxElems,MaxNodes,MaxArea,IndRemAlw
+    0   20000   20000   1.000e+00    0
+# Spin Data (Centrifugal Force)
+  IndS,IndF,IndV,SpinRadius, SpinOmega
+    0    0    0   0.000e+00   0.000e+00
+# Time Periods
+ numPer,NPrint,LstPrint,MaxIt,IStress,IForce,dTolConv,VtkPrint
+    1    1    0   30    0    0  5.00e-02    0
+        10  1.00e-01
+# Stochastics, Interaction type, iDistrib,dDistrib
+    0    0    0   5.000e-01    0   1.000e-01    1    1
+# Diffusion - IDIFFL,IBDIFSOLF, KHIDROPH, InitConc, InitDiffCoeff, Num.of D(C),ICOUPLNG,MolMass,ConcCritical
+    1    0  0.0000e+00   1.000e+01    1    1   1.000e+00   1.000e-04    1
+ Diffusion D(C) - Num. of pairs
+    1
+ Pairs - Concentration, Diff. coeff.
+   0.000e+00   2.000e-01
+# Migration data
+IMigration    0
+Fibers
+Fiber count, Input type
+1 2
+Fiber directions
+  0.00e+00   1.00e+00   0.00e+00    14     1     0
+Muscle fraction
+  3.00e-01
+Hunter calcium functions
+Number of functions
+    1
+    3
+  0.00e+00  0.00e+00
+  3.00e+00  1.00e+00
+  6.00e+00  0.00e+00
+Gordon's functions
+Number of functions
+    1
+1.000000    6
+  6.00e-01  0.00e+00
+  8.00e-01  3.44e-01
+  9.50e-01  4.40e-01
+  1.05e+00  4.40e-01
+  1.80e+00  0.00e+00
+  5.00e+00  0.00e+00
+Activation functions
+Number of activation functions
+    2
+    1    6
+  0.00e+00  0.00e+00
+  2.00e-01  1.58e-01
+  7.00e-01  1.58e-01
+  8.00e-01  1.58e-01
+  5.00e+00  1.58e-01
+  1.00e+09  2.00e-01
+    2    6
+  0.00e+00  0.00e+00
+  2.00e-01  1.58e-01
+  7.00e-01  1.58e-01
+  8.00e-01  1.58e-01
+  5.00e+00  1.58e-01
+  1.00e+09  2.00e-01
+Strain dependance function
+Points count
+    6
+  0.00e+00  0.00e+00
+  1.00e+00  5.00e-01
+  1.20e+00  5.00e-01
+  2.00e+00  0.00e+00
+  2.20e+00  0.00e+00
+  3.00e+00  0.00e+00
+Young's modulus functions
+Number of functions
+    2
+    1    6
+  0.00e+00  1.00e+00
+  1.00e+00  1.00e-03
+  1.20e+00  1.00e+00
+  2.00e+00  1.00e+00
+  2.20e+00  1.00e-03
+  1.00e+07  1.00e-03
+    2    6
+  0.00e+00  1.00e+00
+  1.00e+00  1.00e+00
+  1.20e+00  1.00e-03
+  2.00e+00  1.00e-03
+  3.00e+00  1.00e+00
+  1.00e+03  1.00e+03
+Function periods
+t1,t2,t3,dt
+1.000000 2.000000 3.000000 0.200000
+# Cell - Prescribed forces
+0 0.000000
+# Beam generation data
+0 1.000000 -1.000000 0.800000 1.000000 1.000000 0.800000 0.600000
+# Prescribed Multi Youngs Functions - Size
+    1
+# Pairs - Strech, Young modulus
+    3
+# Strech, Youngs
+   0.000e+00   5.000e+01
+   1.000e+01   2.000e+02
+   2.000e+01   6.000e+02
+# Holz data
+0
+# PLLA Exp data
+    0
+# Solid Walls
+UpperWallNum, LowerWallNum, UpperComplex, UpperAttached, LowerComplex, LowerAttached, bUppConstr, bLowConstr
+         0         0         0         0         0         0         0         0
+# 1D Solid Groups
+ n1DGroups, b1DEnabled
+    1    0
+ nID, nSegments, nNodes, dCuttof, dStiff, dCutArt, dForceAtr, nIndInter, bBeamModel, MatID, MatFunID, FluidInteraction, Strain Control Indicator
+    1     2     4   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00     1     0     1     1     0     0
+ SegmentList - ID, Diam1, Diam2, X1, Y1, Z1, X2, Y2, Z2, Division
+    1   1.000000e-01   1.000000e-01  -1.000000e+00  -5.000000e-01   0.000000e+00   1.000000e+00   5.000000e-01   0.000000e+00     1
+    2   1.000000e-01   1.000000e-01  -1.000000e+00   5.000000e-01   0.000000e+00   1.000000e+00  -5.000000e-01   0.000000e+00     1
+ NodeList - ID, X, Y, Z, IDx, IDy, IDz, bFx, bFy, bFz, bVeloc, bConce
+    1  -1.000000e+00  -5.000000e-01   0.000000e+00     1     1     1     0     0     0     0     0     0
+    2   1.000000e+00   5.000000e-01   0.000000e+00     0     0     1     0     0     0     0     0     0
+    3  -1.000000e+00   5.000000e-01   0.000000e+00     1     0     1     0     0     0     0     0     0
+    4   1.000000e+00  -5.000000e-01   0.000000e+00     0     1     1     0     0     0     0     0     0
+# General Solid Groups
+ nGenSolidGroups, bGenSolidGroupsEnabled, bOrthotropy, dOrthoAngle, bLargeStrain, bArcModel, bArcQuart
+    1     0     0   0.000000e+00     0     0     0
+ nID, nDivX, nDivY, nDivZ, dDistX, dDistY, dDistZ, dCenterX, dCenterY, dCenterZ, dRotAngle, nMatID, bMassGrowth, dGrowthConc, dGrowthDens, nNodes, nModelType, bMixedFormulation 
+    1     1     1     1   1.000000e+00   1.000000e+00   1.000000e+00   5.000000e-01   5.000000e-01   5.000000e-01   0.000000e+00     1     0   5.040000e+01   1.000000e+03     0     0     0     0
+Muscle, Muscle element subtype, Activation, Muscle content 1d ratio, Fiber large strain
+     0     0     1   0.000000e+00     1
+ NodeList - ID, X, Y, Z, IDx, IDy, IDz, bFx, bFy, bFz, bVeloc, bConce, nCSFEDom
+# Domain Type 
+    1
+# Solid  Tissues 3D 
+ nTissueDomains3D, bTissueDomainsEnabled, bBoundFaces, nBoundFaces, bUniMeshLay, bDisplacement
+    1    1    0    0    0    1
+# Solid Tissue 3D, Direction, Div X, Y, Z, Length X, Y, Z, nDomain, Center X, Y, Z, Rot X, Y Z, bFromSTL, bUniform, nMatID, dMaxEA, bChamberXDistributed, nUniLayers, dShellThick
+    0    1    1    1   1.00000e+00   1.00000e+00   1.00000e+00    0   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    0    0    1   1.00000e+01    0    0    1   1.00000e-01
+# Inlet Forces and Constraints, bSolidFx3DIn, dSolidFx3DIn, nFunSolidFx3DIn, bSolidFy3DIn, dSolidFy3DIn, nFunSolidFy3DIn, bSolidFz3DIn, dSolidFz3DIn, nFunSolidFz3DIn, bConstX3DIn, bConstY3DIn, bConstZ3DIn
+    0   1.00000e+00    1    0   1.00000e+00    1    0   1.00000e+00    1    0    0    0
+# Outlet Forces and Constraints, bSolidFx3DOut, dSolidFx3DOut, nFunSolidFx3DOut, bSolidFy3DOut, dSolidFy3DOut, nFunSolidFy3DOut, bSolidFz3DOut, dSolidFz3DOut, nFunSolidFz3DOut, bConstX3DOut, bConstY3DOut, bConstZ3DOut, bPrescSolidVeloc3D, dPrescSolidVeloc3D, nFunIDSolidVeloc3D
+    0   1.00000e+00    1    0   1.00000e+00    1    0   1.00000e+00    1    0    0    0    0   1.00000e+00    1   1.00000e+00
+# Muscle Data, bMuscleEnabled, Activation ID, IMuscleLargeStrain, Muscle element subtype, Muscle content 1d
+    0    1    0    1  1.0000e+00
+Fiber points count
+0
+# Uniform layers data
+ -1.00e+02  0.00e+00  0.00e+00  0.00e+00  1.00e+00  0.00e+00  5.00e-02    3    0
+# DomainID, ZoneCenter, ZoneRadius, bZoneWall, bZoneLeft, bZoneRight, BoundSphereSize, IDW, pIDW, ShowVeloc, ShowOnlySelected, nTimeSteps, Step duration
+    1     -0.500      0.500      0.500      0.870     0     0     0      0.020     1      2.000     0     0    10      0.100
+# ZoneSize PrescribedValuesBySteps
+16 10
+0   0.000000   0.000000   0.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+1   0.000000   0.000000   1.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+2   0.000000   1.000000   1.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+3   0.000000   1.000000   0.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+8   0.000000   0.500000   0.500000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+9   0.000000   0.500000   0.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+13   0.000000   1.000000   0.500000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+18   0.000000   0.500000   1.000000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+19   0.000000   0.000000   0.500000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+28   0.333333   0.666667   0.333333
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+29   0.333333   0.666667   0.666667
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+30   0.000000   0.666667   0.333333
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+31   0.250000   0.750000   0.500000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+36   0.000000   0.333333   0.666667
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+38   0.333333   0.333333   0.666667
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+39   0.250000   0.500000   0.750000
+  0.020000  0.000000  0.000000
+  0.040000  0.000000  0.000000
+  0.060000  0.000000  0.000000
+  0.080000  0.000000  0.000000
+  0.100000  0.000000  0.000000
+  0.083000  0.000000  0.000000
+  0.067000  0.000000  0.000000
+  0.050000  0.000000  0.000000
+  0.033000  0.000000  0.000000
+  0.017000  0.000000  0.000000
+# Prescribed Displacements
+6 
+1   0.000000   0.000000   1.000000 2 0 0
+2   0.000000   1.000000   1.000000 2 0 0
+3   0.000000   1.000000   0.000000 2 0 0
+0   0.000000   0.000000   0.000000 2 0 0
+5   1.000000   0.000000   1.000000 0 0 0
+6   1.000000   1.000000   1.000000 0 0 0
+Face types:
+# CSFE Smeared Params
+ bCSFESmeared 
+    0 
+# Heart Visualization Parameters 
+    0
+Generate Mesh, Generate Fibs, Table Fibs, Keep existing Center, Linear/Cubic fiber dir
+    0    0    1    0    1
+# CSFE Fiber Groups
+ bCSFESmearedFiber
+     0 
+# Lung Model 
+ bEnabled 
+    0

@@ -1,0 +1,807 @@
+1
+
+
+
+
+
+
+
+
+                                 P R O G R A M
+                 FOR FINITE ELEMENT ANALYSIS OF FLUID FLOW
+                               WITH HEAT TRANSFER
+
+
+
+
+
+
+
+
+
+
+
+
+
+            PPPPPPPPP         AAAA        KK      KK     FFFFFFFFFT
+            PPPPPPPPPP       AAAAAA       KK     KK      FFFFFFFFFT
+            PP      PP      AA    AA      KK    KK       FF
+            PP      PP     AA      AA     KK   KK        FF
+            PPPPPPPPPP     AA      AA     KK  KK         FFFFFFFF
+            PPPPPPPPP      AA      AA     KKKKK          FFFFFFFF
+            PP             AAAAAAAAAA     KKKKKKK        FF
+            PP             AAAAAAAAAA     KK    KK       FF
+            PP             AA      AA     KK     KK      FF
+            PP             AA      AA     KK      KK     FF
+
+
+
+
+
+
+   ---------------------------  VERSION  5.00  ---------------------------
+
+
+                              LABORATORY FOR ENGINEERING SOFTWARE
+                              FACULTY OF MECHANICAL ENGINEERING
+                              UNIVERSITY OF KRAGUJEVAC
+                              UL. S. JANJICA 6
+                              34000 KRAGUJEVAC
+                              SERBIA AND MONTENEGRO
+                              E-mail: fica@kg.ac.yu
+                                                    
+
+
+
+
+           TYPE OF ANALYSIS ..............................INDTYPE =    1
+                EQ.1; PAKSF
+                EQ.2; PAKT
+                EQ.3; PAKFIS
+
+
+
+
+
+      H E A D I N G  O F  P R O B L E M
+      ---------------------------------
+
+
+******************************************************************************
+                                                                                
+******************************************************************************
+
+
+
+
+
+      F O R M A T  F O R  I N P U T  D A T A
+      --------------------------------------
+
+
+           FORMAT INDICATOR .............................. INDFOR =    2
+                EQ.0; INDFOR = 1
+                EQ.1; FREE FORMAT
+                EQ.2; FIXED FORMAT, AS DESCRIBED
+
+
+           FLAG FOR SOLID-FLUID MECHANICS (0-NO, 1-YES).... INDFS =    1
+                    FIELD PROBLEMS (0-NO, 1-YES)......    INDFIELD=    0
+                    COUPLED SF-FIELD (0-NO, 1-YES)......  ICOUPLFS=    1
+           FLAG FOR FIELD GEOMETRY UPDATE (0-NO, 1-YES)...ICHANGEG=
+      B A S I C    D A T A    F O R   T H E   P R O B L E M
+      -----------------------------------------------------
+
+
+           TOTAL NUMBER OF NODAL POINTS ...................... NP =    0
+                EQ.0; PROGRAM STOP
+
+
+           NUMBER OF ELEMENT GROUPS ........................ NGET =    1
+                EQ.0; DEFAULT SET "1"
+
+
+           NUMBER OF DIFERENT MATERIALS ................... NMATT =    1
+                EQ.0; DEFAULT SET "1"
+
+
+           STEADINES INDICATOR ............................ NSTAC =    0
+                EQ.1; STEADY STATE
+                EQ.0; TRANSIENT
+
+
+           NUMBER OF CONSTANT TIME STEP PERIODS ............ NPER =    1
+                EQ.0; DEFAULT SET "1";
+
+
+           OUTPUT PRINTING INTERVAL ...................... NPRINT =    1
+                EQ.0; DEFAULT SET "1"
+
+
+           INDICATOR FOR ANALYSIS ........................  INDFL =    1
+                EQ.0; ANALYSIS FLUID WITH COUPLED HEAT TRANSFER
+                EQ.1; FLUID FLOW ANALYSIS ONLY
+                EQ.2; HEAT TRANSFER ONLY
+
+
+           INDICATOR FOR PENALTY ANALYSIS................  IPENAL =    0
+                EQ.0; MIXED FORMULATION
+                EQ.1; PENALTY METHOD USED
+
+
+           INDICATOR FOR ALE FORMULATION...................  IALE =    0
+                EQ.1; ALE FORMULATION IS USED
+                EQ.0; ALE FORMULATION IS NOT USED
+
+
+           INDICATOR FOR SPECIFIC BOUNDARY CONDITION.....  IBOUND =    0
+                EQ.1; SPECIFIC BOUNDARY CONDITION ARE USED
+                EQ.0; SPECIFIC BOUNDARY CONDITION ARE NOT USED
+           FLAG MIXED SOLUTION WITH PRESSURE (FOR 4-NODE)    MIXP =    1
+                EQ.1; PRESSURE INCLUDED
+           NUMBER OF ELEMENTS WITH PRESSURE (4-NODE)  .. NELPRESS =    0
+                APPLICABLE FOR MIXP=1, NPTOT=NPT+NELPRESS
+                IT IS ASSUMED THAT NELPRESS=NUMBER OF 4-NODE ELEMENTS!!!
+           NO OF ELEMENTS WITH PRESCRIBED PRESSURE..  NELPRESSZAD =    0
+                APPLICABLE FOR MIXP=1, MUST BE .GE. TO NO OF ELEMENTS
+                IN THIS VERSION OF THE PROGRAM IT IS SET NELPRESSZAD=0!!!
+           FLAG FOR ENFORCING DIV-V=0 FOR 9 NODE ELEMENT.. ILAMDA9=    0
+                EQ.0 - NOT USED,...,EQ.1 -USED
+           FLAG FOR PRINTOUT LST FILE (0-NO,1-YES)........LSTPRINT=    0
+           NO OF NODAL POINTS OF FLUID THETRAEDRAL ELEMENTS
+                (0- NO TETRAHEDRAL ELEMENTS)          ......  NDIMTHEF=    0
+           ADDITIONAL PARAMETERS: ISLIP:    0
+                INDICATOR FOR BOUNDHEARTIO          .....  INDHEARTMOD=    0
+                TIME FOR OPENING AORTIC VALVE     ......  DTIMEOPEN=      0.10
+                TIME FOR CLOSING AORTIC VALVE     .....  DTIMECLOSE=      0.40
+      B A S I C    D A T A    F O R   T H E   P R O B L E M
+      -----------------------------------------------------
+
+
+           TIME INTEGRATION METHOD USED ................... IALFA =    1
+                EQ.0; DEFAULT SET "1"
+                EQ.1; EULER BACKWARD INTEGRATION (ALPFA = 1)
+
+
+           PRINT OF RESULTS IN PRESCRIBED NODES ........... INDSC =    0
+                EQ.0; IN ALL NODES
+                EQ.1; IN PRESCRIBED NODES
+
+
+           PRINT OF RESULTS IN PRESCRIBED FORMAT .......... IFORM =    0
+                EQ.0; IN FORMAT  D13.5
+                EQ.1; IN FORMAT  F10.3
+
+
+           MAXIMUM NUMBER OF ITERATIONS ................... MAXIT =   30
+                EQ.0; DEFAULT SET "15"
+
+
+           APSOLUTLY ACCURANCU AT ITERATIONS ......... EPSTA = 0.000D+00
+
+
+           RELATIVELY ACCURANCU AT ITERATIONS ........ EPSTR = 5.000D-02
+                EQ.0; DEFAULT SET "1.E-3"
+
+
+           ANALYSIS METHODS EMPLOYED ...................... METOD =    1
+                EQ.1; FULL IMPLICIT METHOD
+                EQ.2; EXPLICIT-IMPLICIT METHOD
+                EQ.3; FULL EXPLICIT METHOD
+
+
+           DEFINITION EQUATION METHOD EMPLOYED............. MBAND =    0
+                EQ.0; EQUATIONS ARE DEFINED SUCCESSIVELY 
+                EQ.1; EQUATIONS OF PRESSURE ARE DEFINED AT THE END OF
+                      GLOBAL SYSTEM
+           NJUTRA=0),NJUTRA=    0
+           SYMMETRY OF SYSTEM MATRIX (0-USYMMTERIC, 1-SYMMERTIC),' ISYMMS=    0
+           USING OF MUMMPS (0-NOT USED, 1-USED),IMUMPS=    1
+           FLAG FOR DIFFUSION WITHIN FLUID (0-NO, 1-YES), INDIFFL=    0
+           FLAG FOR PROPAGATION DIFFUS BOUNDARY CONDITION FOR FLUID (0-NOT USED, 1-USED), IPROPAGD=    0
+
+
+
+      D A T A   F O R   R E S T A R T
+      -------------------------------
+
+
+           INDICATOR FOR JOB EXECUTION ................... IREST =    1
+                EQ.0; CHECK OF INPUT DATA
+                EQ.1; JOB EXECUTION
+
+
+      D A T A  F O R  T I M E  S T E P S
+      ------------------------------------------------
+
+
+      PERIOD NUMBER..... NPER=    1
+
+           NUMBER OF TIME STEPS PER PERIOD................. NKORP =   20
+                TIME IN STEP...........DT  = 0.500D-01
+
+
+
+ B A S I C   D A T A  F O R  S O L I D S
+ NUMBER OF NODES........................         NPT_IB=      8
+ IN CASE OF HEART 3D MODEL AND IPENALTYH=0
+   THIS IS THE NUMBER OF NODES AT INTERNAL SURFACE
+ NUMBER OF GROUPS FOR SOLID.............      NGROUPSOL=      1
+ NUMBER OF MATERIALS....................        NMATSOL=      2
+ CUTTOF FOR INTERACTION.................        dCutOff=  0.0000D+00
+ STIFFNESS OF FICTITIOUS ELEMENTS.......     dStiffness=  0.0000D+00
+ FRICTION INTERACTION COEFFICIENT....... dFrictionCoeff=  0.0000D+00
+ FLAG FOR FRICTION COEFF ...............      nFriction=      0
+      FOR SOLID REMESHING...............     IREMESHSOL=      0
+      FOR WALL REMESHING................     IREMSOLALW=      0
+ MAX NUMBER OF SOLID ELEMENTS...........        MAXSOLE=  20000
+ MAX NUMBER OF SOLID NODES..............        MAXSOLN=  20000
+ MAX SREA FOR 1D ELEMENT................       SMAXAREA=  0.1000D+01
+ FALG FOR REMESHING OF FLUID............      IREMESHFL=      0
+ TYPE OF MESHGENERATOR FOR 3D MODEL.....      IMESH3DSF=      0
+  0 - MeshGenerator3Ds.exe
+  1 - MeshGenerator3Dsf.exe
+ LARGE STRAINS AND INCREMENTAL SOLUTION.        ILARGES=      0
+ INTEGRATION TYPE (2-TOT.LAGRAN, 3 - UPD.LAGRAN) IATYPS=      3
+ I T   I S   S E T  BY  THE PROGRAM I A T Y P S = 3  ALWAYS
+ LOGARITMIC STRAINS: 0 - NO, 1 - YES....           ILOG=      0
+ N O  U S E  OF  L O G   S T R A N S
+ FLAG FOR HEART MODELING (0-NO, 1-YES)........ INDHEART=      0
+ COMPOSITE SMEARED FE FLAG(0-NO, 1-YES)......  INDCSFEM=      0
+ MAX NUMBER OF DOMAINS WITHIN THE CSFEM EEMENT    NDMAX=      0
+    FIBER DOMAIN IS NOT INCLUDED IN NDMAX
+    NUMBER OF CONTACT SURFACES BETWEEN CONTINUA   NCMAX=      0
+    EQ.0 COMMON VELOCITIES AND DISPLACEMENTS
+ DATA ABOUT FIBER NORMAL...                     INORMALH=      1
+    0-NO, 1-USE NORMAL,AND IMPORT; 0- FOR HEART MEMBRANE
+    SET TO ZERO FOR HEART 3D MODEL AND IPENALTYH=0
+ FLAG FOR SOLUTION.............................   ISOLVE=      1
+ 0-VELOCITIES(SOLID+FLUID), 1-DISPLACEMENTS(SOLID ONLY)
+EXTERNALLY PRESCRIBED DISPLACEMENTS (0-NO, 1-YES)       =      0
+MODIFIED BOUNDARY FILE (0-NO, 1-YES).... IMODIFBOUNDARY =      0
+FLAG FOR DETAILED CELL MODEL ..................ICELLMOD=      0
+
+ WHEN MEMBRANE IN SPACE IS USED (IMEMB.GE.3) OR NDIM.EQ.8
+ I2D32 DIMENSION PARAMETER IS RESET TO I2D3D=3
+
+ FLAG FOR SHELL......                      INDSHELL=    0
+     (0-NO SHELL, WITH SHELL ELEMENTS)
+ GLOBAL CONSTR ARRAY IOPGL(I) (0-FREE, 1-RESTRAINED):   0 0 0 1 1 1
+ FLAG FOR SOLIDS DIFFUSION(0-NO SOLID DIFF)...    INDIFSOL=    0
+ NUMBER OF SOLID DIFF MATERIAL MODELS......     NMATSOLDIF=    1
+ FLAG PRESCR DIFF BOUND CONDITS AT COMMON NODES  IBDIFSOLF=    0
+     0-PRESCRIBED VALUES FOR SOLID ARE USED
+     1-PRESCRIBED VALUES FOR FLUID ARE USED
+ FLAG FOR HIDROPHOBICITY (0-NOT USED)............ KHIDROPH=    0
+          SKEW BOUNDARY CONDITIONS (0-NO, 1-YES)..   ISKEW=    0
+          2D OR 3D FOR 1D-SOLID ELEMENTS.........    I2D3D=    3
+          BEAM ELEMENT (0-NO,2-2D,3-3D BEAM) ...   INDBEAM=    0
+ NUMBER OF FIBERS FOR MUSCLE MODEL..........          NFIB=    0
+ FLAG FOR USING FIBER DIRECTION ............      INDIRFIB=    2
+         0-DIRECTION OF FIBERS NOT USED
+         1-DIRECTIONS ARE GIVEN THROUGH TABLE
+         2-DIRECTIONS ARE GIVEN AS NODAL VALUES
+         3-GIVEN THROUGH POINTS AT FIBERS WITHIN CONTINUUM ELEMENTS
+      LT.0-NO OF LAYERS-HEART 3D EL MODEL WITH IPENALTYH=0
+ NUMBER OF LAYERS FOR HEART 3D ELEMENT MODEL        NLAY3D=    0
+ FLAG FOR CELL MIGRATION (0-NO, 1-YES)......... IMIGRATION=    0
+ DEFORMATION WORK (ENERGY) FLAG (1-CALCULAT,0-NO)  INDWORK=    0
+ MEBRANE/SHELL FLAG  0-NO,2-2D,3-3D
+         4-HEART WALL NO DIFFUSION OR ELECTRICAL FIELD
+         5            WITH DIFFUSION OR ELCTRICAL FIELD
+         6-HEART WALL SHELL NO DIFFUSION OR ELECTRICAL FIELD
+         7-HEART WALL SHELL WITH DIFFUSION OR ELECTR FIELD
+                                                     IMEMB=    0
+ FLAG FOR CYCLING LOAD (0-NO, 1-YES)............ INDCYCLES=    0
+ FLAG FOR COMPOSITE LUNG FE
+ 0-NO,1-CONST RVLUNG, 2-NODAL VARIABLE......... ICOMPOSLNG=    0
+ SOLID-FLUID COUPLING(0-STRONG, 1-LOOSE)......   ISFCOUPL =    0
+ HYPERTROPHY OF HEART FLAG
+  0-NO, 1-CONCENTRIC(SYSTOLIC), ILOADH=2
+  2-ECCENTRIC(DIASTOLIC),ILOADH=1; 3-BOTH.....     IHYPERT=    0
+  FLAG FOR TANGENT FORCE (0-NO, 1-YES)......... ITANFORCE=    0
+  FLAG FOR REVERSE TANGENT FORCE ................ ITANINV=    0
+  FLAG FOR FLUID AS A DEFFORM BODY ................ IDEFFL=    0
+ HYPERTROPHY OF HEART FLAG
+  0-NO, 1-CONCENTRIC(SYSTOLIC), ILOADH=2
+  2-ECCENTRIC(DIASTOLIC),ILOADH=1; 3-BOTH.....     IHYPERT=    0
+
+ D A T A  F O R  S O L I D
+ NUMBER OF SOLID NODES  .....                 NPT_IB=      8
+ NUMBER OF ELEMENT GROUPS (LE. 300)....    NGROUPSOL=      1
+ NUMBER OF MATERIAL MODELS (LE. 50)..        NMATSOL=      2
+ NUMBER OF DIFF MATERIAL MODELS(LE.50)....NMATSOLDIF=      1
+
+
+D A T A   F O R   N O D E S   O F  S O L I D
+NODE NUMBER          DISPLACEMENT NUMBERS            COORDINATES               LUNG AIR VOL FRACT MEMRANE THICK
+     1                0      0      1   0.0000D+00   0.0000D+00   0.1000D+01        0.0000D+00
+     2                0      0      0   0.0000D+00   0.0000D+00   0.0000D+00        0.0000D+00
+     3                0      2      3   0.0000D+00   0.1000D+01   0.1000D+01        0.0000D+00
+     4                0      4      0   0.0000D+00   0.1000D+01   0.0000D+00        0.0000D+00
+     5                5      0      6   0.1000D+01   0.0000D+00   0.1000D+01        0.0000D+00
+     6                7      0      0   0.1000D+01   0.0000D+00   0.0000D+00        0.0000D+00
+     7                8      9     10   0.1000D+01   0.1000D+01   0.1000D+01        0.0000D+00
+     8               11     12      0   0.1000D+01   0.1000D+01   0.0000D+00        0.0000D+00
+
+ DATA FOR M A T E R I A L  MODELS OF SOLIDS(FLUIDS)
+
+ MATERIAL TYPE NUMBER.................          MATNUM =   25
+      1- LINEAR ELASTIC (NMATPAR=3)
+      2- LINEAR VISCO-ELASTIC(NMATPAR=3)
+      3- FLUID(NMATPAR=3)
+      4- CREEP
+      5- MIXED FORMULATION FOR SOLID(NMATPAR=3) 
+      6- VISCOELATIC INCOMPRESSIBLE MIXED FORMULAT(NMATPAR=4)
+      7- ELASTIC CREEP MIXED FORMULATION
+      8- VISCOELATIC-CREEP MIXED FORMULATION
+      9- ORTHOTROPIC ELASTIC (NMATPAR=10)
+     10- ORTHOTROPIC VISCO-ELASTIC(NMATPAR=14)
+     11- ELASTIC BEAM (NMATPAR=5)
+     12- VISCOELASTIC BEAM (NMATPAR=5)
+     13- MUSCLE MODEL (NMATPAR=5 FOR HILL OR ICALCIUM=1)
+     14- MAXWELL VISCOELASTIC (NMATPAR=5) 
+     15- MAXWELL VISCOELASTIC WITHIN FLUID (NMATPAR=5)
+     16- HOLZAPFEL MODEL FOR HEART - SPECIAL READING
+     17- Huxley Muscle Model
+     18- PLLA MODEL WITH POTENTIAL (NMATPAR=9)
+     19- PLLA MODEL - EXPERIMENTAL CURVES SPECIAL READING
+     20- JOHNSON-COOK PLASTICITY MODEL
+     21- HEART McEVOY-HOLZAPFEL STRAIN POTENTIAL MODEL
+         NMATPAR=13
+     22- HEART HOLZAPFEL-OGDEN STRAIN POTENTIAL MODEL
+         NMATPAR=8
+     23  LAFORTUNE-VASQUES HEART ALYTICAL
+         NMATPAR=6
+     24  OGDEN HYPERELASTIC MODEL - NMATPAR NOT USED
+     25  MOONEY-RIVLIN HYPERELASTIC MODEL - NMATPAR NOT USED
+     35- MULTILINAR ELASTIC MODEL FOR 1D ELEMENTS
+     36- BIAXIAL MEMRANE MODEL
+     37- SURFACTANT HYSTERETIC MODEL
+     38- UNIAXIAL SASAKI-HOPPIN HYSTERETIC MODEL
+     39- ALVEAOLA WALL MODEL FOR LUNG
+ NUMBER OF MATERIAL PARAMETERS....            NMATPAR =    0
+ NUMBER OF MATERIAL SETS .......              NMATSET =    1
+  FOR VISCOELASTIC WITHIN FLUID IT IS SET     NMATSET=1   !!!
+ FLAG FOR MULTINIEAR MAT DATA (0-NO,1,YES).. INDMULTIM=    0
+ CALCIUM FLAG FOR MUSCLE MODEL:
+ 0-HILL, 1-HUNTER, 2-CAMPBELL-RAZUMOVA-RICE...ICALCIUM=    0
+ NUMBER OF TIME FUNCTIONS FOR CALCIUM.....     NCALCTF=    0
+ MAX NO TIME POINTS FOR CALCIUM TIME FUNCTS  NCALCTFMX=    0
+ VOL FRACT OF MUSCLE FIBERS (CALCIUM MODELS) DFIMUSCLE=    0.000D+00
+ PARALLELIZE MICROMODEL, IPARALLEL=    0
+
+ MOONEY-RIVLIN MATERIAL MODEL (25)
+ MATERIAL CONSTANT .............C1MRIVL=   0.3830D+01
+                   .............D1MRIVL=   0.1880D+02
+                   .............D2MRIVL=   0.1000D+02
+ COMPRISSIBILITY MODULUS.......AKVMRIVL=   0.1000D+02
+ DENSITY.......................GUSMRIVL=   0.0000D+00
+
+ MATERIAL TYPE NUMBER.................          MATNUM =   13
+      1- LINEAR ELASTIC (NMATPAR=3)
+      2- LINEAR VISCO-ELASTIC(NMATPAR=3)
+      3- FLUID(NMATPAR=3)
+      4- CREEP
+      5- MIXED FORMULATION FOR SOLID(NMATPAR=3) 
+      6- VISCOELATIC INCOMPRESSIBLE MIXED FORMULAT(NMATPAR=4)
+      7- ELASTIC CREEP MIXED FORMULATION
+      8- VISCOELATIC-CREEP MIXED FORMULATION
+      9- ORTHOTROPIC ELASTIC (NMATPAR=10)
+     10- ORTHOTROPIC VISCO-ELASTIC(NMATPAR=14)
+     11- ELASTIC BEAM (NMATPAR=5)
+     12- VISCOELASTIC BEAM (NMATPAR=5)
+     13- MUSCLE MODEL (NMATPAR=5 FOR HILL OR ICALCIUM=1)
+     14- MAXWELL VISCOELASTIC (NMATPAR=5) 
+     15- MAXWELL VISCOELASTIC WITHIN FLUID (NMATPAR=5)
+     16- HOLZAPFEL MODEL FOR HEART - SPECIAL READING
+     17- Huxley Muscle Model
+     18- PLLA MODEL WITH POTENTIAL (NMATPAR=9)
+     19- PLLA MODEL - EXPERIMENTAL CURVES SPECIAL READING
+     20- JOHNSON-COOK PLASTICITY MODEL
+     21- HEART McEVOY-HOLZAPFEL STRAIN POTENTIAL MODEL
+         NMATPAR=13
+     22- HEART HOLZAPFEL-OGDEN STRAIN POTENTIAL MODEL
+         NMATPAR=8
+     23  LAFORTUNE-VASQUES HEART ALYTICAL
+         NMATPAR=6
+     24  OGDEN HYPERELASTIC MODEL - NMATPAR NOT USED
+     25  MOONEY-RIVLIN HYPERELASTIC MODEL - NMATPAR NOT USED
+     35- MULTILINAR ELASTIC MODEL FOR 1D ELEMENTS
+     36- BIAXIAL MEMRANE MODEL
+     37- SURFACTANT HYSTERETIC MODEL
+     38- UNIAXIAL SASAKI-HOPPIN HYSTERETIC MODEL
+     39- ALVEAOLA WALL MODEL FOR LUNG
+ NUMBER OF MATERIAL PARAMETERS....            NMATPAR =    6
+ NUMBER OF MATERIAL SETS .......              NMATSET =    1
+  FOR VISCOELASTIC WITHIN FLUID IT IS SET     NMATSET=1   !!!
+ FLAG FOR MULTINIEAR MAT DATA (0-NO,1,YES).. INDMULTIM=    0
+ CALCIUM FLAG FOR MUSCLE MODEL:
+ 0-HILL, 1-HUNTER, 2-CAMPBELL-RAZUMOVA-RICE...ICALCIUM=    1
+ NUMBER OF TIME FUNCTIONS FOR CALCIUM.....     NCALCTF=    1
+ MAX NO TIME POINTS FOR CALCIUM TIME FUNCTS  NCALCTFMX=    2
+ VOL FRACT OF MUSCLE FIBERS (CALCIUM MODELS) DFIMUSCLE=    0.700D+00
+ PARALLELIZE MICROMODEL, IPARALLEL=    0
+
+ MUSCLE MODEL WITH CALCIUM - HUNTER MODEL
+     DENSITY   CONC C50      SIGMAX   EXPONENT N  COEFF ETA CALCIUM FUN ID
+ MATERIAL SET NUMBER....NSET=    1
+  0.0000D+00  0.5000D+00  0.1000D+02  0.4000D+00  0.2000D+00  0.1000D+01
+
+ CALCIUM CONCENTRATION IN TERMS OF TIME USED FOR MUSCLE MODEL
+ FUNCTION SEQUENCE NUMBER ........................ IFSC =    1
+ TOTAL NUMBER OF PAIRS ARGUMENT-FUNCTION ......... IMAX =    2
+       TIME          CONCENTRATION
+    0.000D+00          0.000D+00
+    0.242D+01          0.000D+00
+
+ DIFFUSION MATERIAL DATA.....         DIFFUSION NUMBER=    1
+ MAX NO OF POINTS FOR DEPENDENCE DIFF COEFF ON CONC
+     =0 OR 1 - CONSTANT DIFF COEFF
+ X,Y,Z DIRECTIONS: NUMBER OF PTS ON DXYZ(C).. NPDIFMAX=    1
+ NUMBER OF SCALING FUNCTIONS (=0,NO SCAL FUNCTS)..NCSF=    0
+ MAX NUMBER OF POINTS ON SCAL FUNCTS.......... NPSFMAX=    0
+
+ DIFFUSION COEFFICIENTS - X,Y,Z
+ CONCENTRATION        DIFF-X       DIFF-Y       DIFF-Z  
+   0.0000D+00        0.2000D+00   0.2000D+00   0.2000D+00
+
+ DATA FOR SOLID E L E M E N T  G R O U P S
+
+ GROUP NUMBER.......   NGE     =    1
+ ELEMENT TYPE............    NTYPE    =    3
+     1 - 1D SOLID
+     2 - 2D SOLID OR FLUID
+     3 - 3D SOLID OR FLUID
+     4 - SHELL
+     5 - BEAM ELEMENT (2D)
+     6 - BEAM ELEMENT (3D)
+     7 - MEMBRANE ELEMENT
+     8 - TETRAHEDRAL ELEMENT
+     9 - MEMRANE ELEMENT FOR HEART WALL
+    10 - SHELL 4-NODE ELEMENT FOR HEART WALL
+
+ NUMBER OF ELEMENTS.....     NET_IB   =    1
+ MATERIAL MODEL NUMBER.......MATMODEL =   25
+      1- LINEAR ELASTIC
+      2- LINEAR VISCO-ELASTIC
+      3- FLUID
+      4- CREEP
+      5- MIXED FORMULATION FOR SOLID
+      6- VISCOELATIC INCOMPRESSIBLE MIXED FORMULATION
+      7- ELASTIC CREEP MIXED FORMULATION
+      8- VISCOELATIC-CREEP MIXED FORMULATION
+      9- ORTHOTROPIC ELASTIC
+     10- ORTHOTROPIC VISCO-ELASTIC
+     11- BEAM ELASTIC
+     12- BEAM VISCO-ELASTIC
+     13- HILLS MUSCLE MODEL
+     14- MAXWELL VISCO-ELASTIC - MIXPE=1, MIXED FORMULATION INCOMPRESSIBLE
+     15- MAXWELL VISCO-ELASTIC - MIXPE=0, COMPRESSIBLE
+     16- HOLZAPFEL MODEL FOR HEART WITH/WOTHOUT HYSTERESIS
+     17- Huxley Muscle Model
+     18- PLLA MODEL WITH POTENTIAL (NMATPAR=9)
+     19- PLLA MODEL - EXPERIMENTAL CURVES SPECIAL READING
+     20- JOHNSON-COOK PLASTICITY MODEL
+     21- McEVOY-HOLZAPFEL STRAIN POTENTIAL MODEL
+     22- HEART HOLZAPFEL-OGDEN STRAIN POTENTIAL MODEL
+     23- HEART ANALYTICAL
+     24- OGDEN HYPERELASTIC MODEL
+     25- MOONEY-RIVLIN HYPERELASTIC MODEL
+     35- MULTILINAR ELASTIC MODEL FOR 1D ELEMENTS
+     36- BIAXIAL MEMRANE MODEL
+     37- SURFACTANT HYSTERETIC MODEL
+     38- UNIAXIAL SASAKI-HOPPIN HYSTERETIC MODEL
+     39- ALVEOLA BIAXIAL CURVE
+ FLAG FOR GRAVITY..........  INDZS    =    0
+     0-NO GRAVITY, 1-WITH GRAVITY
+ PARAMETER FOR RBC, NBRC=    1
+ MATERIAL SET NUMBER, NMAT=    1
+ FLAG FOR DIFFUSION (0-NO DIFFUSION),INDIFGROUP=    0
+ FLAG FOR HIDROPHOBICITY FOR GROUP, IHIDROGR=    0
+ INITIAL CONCENTRATION, CINITIAL=   0.1000D+01
+ COEFFICIENT OF PHIDROPHOBICITY (GT.0.), PHIDROPH=   0.1000D+01
+ FLAG FOR INTERNAL POSITION OF GROUP (0-NO, 1-YES),INTERNAL=    0
+ FLAG FOR RIGID BODY MODEL OF THE SOLID GROUP (EQ.1-RIGID BODY)  .. IRIGIDGROUP=    0
+ FLAG FOR CREEP CALCULATION FOR THE GROUP (0-NO, 1-YES), .. ICREEPGR=    0
+ GRAVITY FUNCTION ID, .. IGFUNID= 1
+ FLAG FOR MIXED FORMULATION FOR SOLID MODEL,....MIXSGOUP=    0
+ MASS GROWTH FALG............................IMASSGROWTH=    0
+ COEFF OF MASS GROWTH.(mass/(init vol*unit time)   CGROWTH=   0.5040D+02
+ DENSITY OF ADDITIONAL MASS.......................RHOMASSG=   0.1000D+04
+ INTERPOLATION INTERFACE LAYER FLAG.............INTLAYER=    0
+ THICKNESS OF INTERFACE LAYER................... THICLAY=   0.1000D+01
+ RADIUS OF TUMOR DOMAIN........................RADIUSLAY=   0.1000D+01
+ MUSCLE CONTENT RATIO WITHIN 1D ELEMENTS.....dFI1D(NGE)=   0.0000D+00
+ MUSCLE FIBERS WITHIN ELEMENTS(0-NO,1-YES)....INDMUSCLE=    0
+ LARGE STRAIN FORM FOR MUSCLES(0-N0,1-YES)    INDLARGEM=    1
+ 2D ELEMENT SUBTYPE...........................  NTYPE2D=    1
+     0-PLANE STRESS, 2-PLANE STRAIN,4-AXIAL SYMMETRY -USED
+      FOR MUSCLE MODEL (OTHRRWISE-PLAIN STRAIN)
+ FLAG FOR MIXED FORMULATION (0-N0, 1-YES).......  MIXPE=    0
+ FLAG FOR CONSTANT SURFACE  (0-NO, 1-YES)....   ICONSTS=    0
+ NO OF COMPARTMS IN CSFEM ................... NELGCSFEM=    0
+ 0-NO SMEARED,-1-ONLY SUPPORTING MEDIUM
+ --  NUMBER NELGCSFEM DOES NOT INCLUDE THE SUPPORTING MEDIUM
+ FLAG FOR CALCUL DEFORM ENERGY (0-NO).....   IWLOADV(NGE)=    0
+    - FOR REVERSE LOADING ................ IWREVERSE(NGE)=    0
+ SURFACTANT COVERAGE FLAG
+  0-NO,1-ONE SIDE,2-TWO MEMBRANE SIDES.... NCOVSRFCT(NGE)=    0
+ VOLUM. FRACTION FOR 1D COMPOSITE 1D FE... EM1DCOMPV(NGE)=   0.0000D+00
+ FLAG FOR COMPOSITE 1D FINITE ELEMENT.....ICOMPOS1DV(NGE)=    0
+ 0 - NO, 1 -YES
+ MATER MODEL FOR PART 1 OF COMPOS 1D FE  MAT1DCOMP(1,NGE)=    0
+ ..... .....     PART 2 ...............  MAT1DCOMP(2,NGE)=    0
+ COMPOSITE LUNG FE FLAG (0-NO,1-YES)....      NGELNG(NGE)=    0
+ NUMBER OF NODES FOR TETRAHEDRAL SOLID ELEMENT.. NDIMTHES=    0
+ NO OF LAYERS  MEMBRANE/SHELL FOR HEART WALL..   NLAYERM =    0
+ IN CASE OF 3D AND IPENALTY=0, NEL3DL=NLAYERM
+ LOGITUDINAL AXIS DIRECTION..                  ILONGAXIS =    0
+
+      D A T A   F O R   (S O L I D)   E L E M E N T S
+      ---------------------------------------
+      E L E M E N T   G R O U P, NGE=    1
+      Material Model, MATMODEL=   25
+ ELEM  NUMBER         ....  NODE NUMBERS...               MATER SET MUSCLE ACTIV  FN    THICKNESS
+         1              1         3         4         2         5         7         8         6              1         0    0
+
+ MATERIAL MODELS FOR COMPARTMENTS INSIDE THE SUPPORTING MEDIUM FOR COMPOSITE SMEARED, CSFEM
+ COMPART NO   MAT MODEL SET NUMBER
+ THIS IS INPUT ONLY IF THERE ARE COMPARTMENTS BESIDES THE SUPPORTING MEDIUM
+
+ L O A D S   ON  S O L I D
+ NUMBER OF CONCENTRATED FORCES....... =    4
+ NUMBER OF PRESCRIBED DISPLACEMENTS.. =    0
+ NUMBER OF PRESCRIBED VELOCITIES..... =    0
+ NUMBER OF SURFACES WITH PRESC PRESS. =
+
+ CONCENTRATED FORCES:
+ NODE    DIRECTION    TIME FUNCTION    FACTOR
+      5      1            1          0.20000D+01
+      6      1            1          0.20000D+01
+      7      1            1          0.20000D+01
+      8      1            1          0.20000D+01
+
+
+      D A T A   A B O U T   T I M E   F U N C T I O N S
+      -------------------------------------------------
+
+
+           NUMBER OF DIFFERENT TIME FUNCTIONS .......... NTABFT =    1
+           MAX. NUM. OF POINTS FOR TIME FUNCTIONS ...... MAXTFT =    3
+
+
+ FUNCTION SEQUENCE NUMBER ........................ IFSC =    1
+ TOTAL NUMBER OF PAIRS ARGUMENT-FUNCTION ......... IMAX =    3
+       TIME             FUNCTION
+    0.000D+00          0.000D+00
+    0.500D+00          0.100D+00
+    0.100D+01          0.000D+00
+       N O D A L   P O I N T   D A T A
+      -------------------------------------------------
+
+
+      NODE NUMBER,   CONSTRAINT ,  NODAL COORDINATES
+
+
+
+
+      B A S I C   D A T A   F O R    E L E M E N T S
+      -----------------------------------------------------
+
+
+           ELEMENT TYPE ................................... NETIP =    3
+                EQ.2; ISOPARAM. 2D ELEMENT IN PLANE X-Y
+                EQ.3; ISOPARAM. 3D ELEMENT IN XYZ SPACE
+                EQ.8; TETRAHEDRAL ELEMENT
+
+           NUMBER OF ELEMENTS ............................... NET =    0
+
+           INDICATOR FOR AXISYMMETRIC ELEMENTS ............ INDAX =    0
+                EQ.0; 2D IN PLANE X-Y OR 3D IN XYZ SPACE
+                EQ.1; AXISYMMETRIC IN PLANE XY
+
+
+
+      I N P U T   D A T A   F O R   E L E M E N T S
+      ---------------------------------------------
+
+
+           TOTAL NUMBER OF MATERIAL ...................... NMAT2D =    1
+                EQ.0; NMAT2D.EQ.1
+
+           MATERIAL NUMBER
+             1-VISCOUS FLUID,2-FOR 1D WITH DEF WALLS........ NMAT2D =    1
+                EQ.0; NMAT2D.EQ.1
+
+           MAXIMUM NUMBER OF NODES PER ELEMENT ........... NP2DMX =    8
+                EQ.0; NP2DMX.EQ.4
+                EQ.4; FOUR NODES PER 2D ELEMENT
+                EQ.9; NINE NODES PER 2D ELEMENT
+                EQ.8; EIGHT NODES PER 3D ELEMENT
+                EQ.21; TWENTY-ONE NODES PER 3D ELEMENT
+
+           PENALTY FACTOR ................................ PENALT = 0.000D+00
+                EQ.0; SET BY DEFAULT TO 10^9 IF IPENAL.EQ.1
+                EQ.0; SET BY THE PROGRAM IF IPENAL.EQ.0
+
+
+
+      D A T A   F O R   S O L I D   E L E M E N T S
+      -------------------------------------------------
+
+
+      ELEMENT NUMBER, ELEMENT NODE NUMBERS
+
+      D A T A   F O R   M A T E R I A L   C O N S T A N T S
+      -----------------------------------------------------
+
+
+           DENSITY OF FLUID .......................... DENS =   0.10000E-05
+           DIFFUSION COEFFICIENT OF FLUID..........DDIFLUID =   0.00000E+00
+           INDICATOR FOR NON-NEWTONIAN FLUID ........ INDAMI =     0
+                EQ.0; DYNAMIC VISCOSITY IS CONSTANTS
+                EQ.1; GENERALIZED CASSON RELATION IS USED
+           FLAG FOR STOCHASITC INTERACTIONS........ ISTOHAST =     0
+
+
+
+           GRAVITY ACCELERATION IN X DIRECTION ......... GX =  0.00D+00
+
+           GRAVITY ACCELERATION IN Y DIRECTION ......... GY =  0.00D+00
+
+           GRAVITY ACCELERATION IN Z DIRECTION ......... GZ =  0.00D+00
+
+           DYNAMIC VISCOSITY .......................... AMI =  0.10D+01
+
+           COEFFICIENT OF THERMAL EXPANSION .......... BETA =  0.00D+00
+
+           REFERENCE TEMPERATURE .................... TETA0 =  0.00D+00
+
+
+
+      D A T A   F O R   P R E S C R I B E D   V A L U E S
+      ---------------------------------------------------
+
+
+           GLOBAL NUM. OF PRESC. VALUES AT NODES ...... NUMZAD =     0
+
+           GLOBAL NUMBER OF BOUNDARY SURFACES ON WHICH
+           SURFACE TRACTION ARE CALCULATED/prescribed ..MAXSIL =     0
+
+
+      NUM. NODE, IND. ABOUT QUANTITIES, TIME FUNC. NUM., VALUE
+
+
+
+
+      D A T A   A B O U T   I N I T I A L   V A L U E S
+      -------------------------------------------------
+
+
+           INITIAL FLUID VELOCITY Uo ................. Uo =      0.000
+
+           INITIAL FLUID VELOCITY Vo ................. Vo =      0.000
+
+           INITIAL FLUID VELOCITY Wo ................. Wo =      0.000
+
+           INITIAL PRESSURE ........................... P =      0.000
+
+           INITIAL TEMPERATURE (or concentration)...... T =      0.000
+
+
+
+
+
+      D A T A   A B O U T   T I M E   F U N C T I O N S
+      -------------------------------------------------
+
+
+           NUMBER OF DIFFERENT TIME FUNCTIONS .......... NTABFT =    1
+           MAX. NUM. OF POINTS FOR TIME FUNCTIONS ...... MAXTFT =    3
+
+
+ FUNCTION SEQUENCE NUMBER ........................ IFSC =    1
+ TOTAL NUMBER OF PAIRS ARGUMENT-FUNCTION ......... IMAX =    3
+       TIME             FUNCTION
+    0.000D+00          0.000D+00
+    0.500D+00          0.100D+00
+    0.100D+01          0.000D+00
+
+
+      D A T A   F O R   M E M O R Y   O C C U P A T I O N
+      ---------------------------------------------------
+
+
+        MAXIMUM OCCUPATION MEMORY FOR SOLVING PROBLEM.. LMAX=        739
+
+        MAXIMUM DEFINITION MEMORY ..................... NTOT=  185000000
+
+        MAX. NUM. OF TERMS IN STIFFNESS MATRIX ........  NWK=          1
+
+
+ YOU NEED FOR SOLVING THIS PROBLEM         0.00  MB RAM MEMORY
+ THIS VERSION OF THE PROGRAM PAK-F HAS MAXIMUM       740.00  MB RAM MEMORY
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             1      0 VTOT   6.8035D-04  6.8035D-04     1.0000D+00
+                    1 VTOT   6.6667D-07  6.8035D-04     9.7989D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             2      0 VTOT   6.8082D-04  6.8082D-04     1.0000D+00
+                    1 VTOT   5.7134D-07  6.8082D-04     8.3918D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             3      0 VTOT   6.8130D-04  6.8130D-04     1.0000D+00
+                    1 VTOT   4.7499D-07  6.8130D-04     6.9718D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             4      0 VTOT   6.8177D-04  6.8177D-04     1.0000D+00
+                    1 VTOT   3.7816D-07  6.8177D-04     5.5468D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             5      0 VTOT   6.8224D-04  6.8224D-04     1.0000D+00
+                    1 VTOT   2.8353D-07  6.8224D-04     4.1559D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             6      0 VTOT   6.8271D-04  6.8271D-04     1.0000D+00
+                    1 VTOT   2.2109D-07  6.8271D-04     3.2384D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             7      0 VTOT   6.8318D-04  6.8318D-04     1.0000D+00
+                    1 VTOT   4.5639D-07  6.8318D-04     6.6803D-04
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             8      0 VTOT   6.8365D-04  6.8365D-04     1.0000D+00
+                    1 VTOT   1.7569D-06  6.8365D-04     2.5700D-03
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+             9      0 VTOT   6.8412D-04  6.8412D-04     1.0000D+00
+                    1 VTOT   7.8699D-06  6.8412D-04     1.1504D-02
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+            10      0 VTOT   6.8468D-04  6.8468D-04     1.0000D+00
+                    1 VTOT   2.2812D-05  6.8468D-04     3.3318D-02
+
+          STEP   ITER  DOF   UNBAL NORM     NORM     UNBAL NORM/NORM
+            11      0 VTOT   6.8278D-04  6.8278D-04     1.0000D+00
+                    1 VTOT   9.0932D-05  6.8278D-04     1.3318D-01
+                    2 VTOT   1.8168D-04  6.8278D-04     2.6608D-01
+                    3 VTOT   3.6277D-04  6.8278D-04     5.3131D-01
+                    4 VTOT   7.2466D-04  6.8278D-04     1.0613D+00
+                    5 VTOT   1.4476D-03  6.8278D-04     2.1202D+00
+                    6 VTOT   2.8918D-03  6.8278D-04     4.2353D+00
+                    7 VTOT   7.8859D-03  6.8278D-04     1.1550D+01
+                    8 VTOT   1.6927D-02  6.8278D-04     2.4792D+01
+                    9 VTOT   9.2114D-03  6.8278D-04     1.3491D+01
+                   10 VTOT   7.9512D-03  6.8278D-04     1.1645D+01
+                   11 VTOT   1.0690D-02  6.8278D-04     1.5657D+01
+                   12 VTOT   1.1250D-02  6.8278D-04     1.6477D+01
+                   13 VTOT   1.3991D-02  6.8278D-04     2.0492D+01
+                   14 VTOT   1.5957D-02  6.8278D-04     2.3370D+01
+                   15 VTOT   1.6023D-02  6.8278D-04     2.3467D+01
+                   16 VTOT   1.5262D-02  6.8278D-04     2.2353D+01
+                   17 VTOT   1.4559D-02  6.8278D-04     2.1323D+01
+                   18 VTOT   1.4081D-02  6.8278D-04     2.0623D+01
+                   19 VTOT   1.3797D-02  6.8278D-04     2.0207D+01
+                   20 VTOT   1.3639D-02  6.8278D-04     1.9976D+01
+                   21 VTOT   1.3559D-02  6.8278D-04     1.9859D+01
+                   22 VTOT   1.3526D-02  6.8278D-04     1.9810D+01
+                   23 VTOT   1.3516D-02  6.8278D-04     1.9796D+01
+                   24 VTOT   1.3519D-02  6.8278D-04     1.9800D+01
+                   25 VTOT   1.3525D-02  6.8278D-04     1.9809D+01
+                   26 VTOT   1.3533D-02  6.8278D-04     1.9820D+01
+                   27 VTOT   1.3540D-02  6.8278D-04     1.9831D+01
+                   28 VTOT   1.3546D-02  6.8278D-04     1.9840D+01
+                   29 VTOT   1.3552D-02  6.8278D-04     1.9849D+01
+                   30 VTOT   1.3558D-02  6.8278D-04     1.9856D+01
+
+
+ MAXIMUM NUMBER OF ITERATIONS IS REACHED:   30 ITERATIONS WITHOUT CONVERGENCE !!
+
+
+
+
+ MAXIMUM NUMBER OF ITERATIONS IS REACHED:   30 ITERATIONS WITHOUT CONVERGENCE !!
+
+

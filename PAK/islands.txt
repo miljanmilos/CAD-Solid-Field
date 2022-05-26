@@ -1,0 +1,2 @@
+C Number of Islands(I10)
+         0
