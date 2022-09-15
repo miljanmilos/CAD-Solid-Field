@@ -1,4 +1,4 @@
-# CAD-Solid-Field
+# CAD Solid and Field
 CAD Solid and Field is the University of Kragujevac and BioIRC’s in-house pre- and post- processing 3D modeling and visualization tool developed using the MFC (Microsoft Foundation Class) library. 
 CAD is integrated with PAK simulation code, it simplifies model generation and can visualize and animate results of computational simulations. As already notified, CAD has two modules: preprocessor and postprocessor.
 The preprocessor is used for model generation in a form that can be run using the FE simulation code. The creation of the model usually consists of geometry and mesh generation, adding constraints, loads, and materials. 
