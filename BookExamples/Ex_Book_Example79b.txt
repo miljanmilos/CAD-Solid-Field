@@ -1,0 +1,502 @@
+#FIS
+# RBC List (Number of cells)
+    0
+# Cancer cell List (Number of cells)
+    0
+# Beads List (Number of cells)
+    0
+# Complex Cell List (Number of cells)
+    0
+# Materials
+    2     0     0
+     ID, Type, bMultiLin
+    1   16    0
+Holzapfel density, SetID, Poisson
+   1.000e-03     1    5.000e-01
+     ID, Type, bMultiLin
+    2   14    0
+ c50, eta, n, sigmaMax, HCF ID, Phi, MPMicroModel 
+   5.000e-01   2.000e-01   4.000e-01   6.000e+01    1    0    0
+# Fluid Properties
+ MaxNodes, MaxElems, MaxLoads, bAxiSymm, bFluidDomain, DomainType
+   20000   20000    1000    0    0    1
+  MaxArea,    Density,    Viscosity,  Gravity X,  Gravity Y,  SGravity X,  SGravity Y
+   1.000e+00   1.000e-03   1.000e-03   0.000e+00   0.000e+00   0.000e+00  -9.810e+06
+# Fluid Contour Data (Number of points, Ind Friction, Friction Coefficient, Uniform, nDivX, nDivY, bCellsMesh, bFluidMesh)
+    0    0   0.000e+00   0.000e+00   0.000e+00    0    1    1    1    0    0    0
+# Fluid Velocity Function - Number of Functions
+    4
+# nFunID, NumPoint
+    1    3
+ 0.00000e+00 1.00000e+00
+ 5.00000e-01 1.00000e+00
+ 1.00000e+00 1.00000e+00
+# nFunID, NumPoint
+    2    3
+ 0.00000e+00 1.00000e+00
+ 5.00000e-01 1.00000e+00
+ 1.00000e+00 1.00000e+00
+# nFunID, NumPoint
+    3    4
+ 0.00000e+00 0.00000e+00
+ 4.90000e-01 0.00000e+00
+ 5.00000e-01 1.00000e+00
+ 1.00000e+00 1.00000e+00
+# nFunID, NumPoint
+    4    3
+ 0.00000e+00 1.00000e+00
+ 5.00000e-01 1.00000e+00
+ 1.00000e+00 1.00000e+00
+# Number of Islands
+    0
+# Solid Remeshing Data
+ IndRem,MaxElems,MaxNodes,MaxArea,IndRemAlw
+    0   20000   20000   1.000e+00    0
+# Spin Data (Centrifugal Force)
+  IndS,IndF,IndV,SpinRadius, SpinOmega
+    0    0    0   0.000e+00   0.000e+00
+# Time Periods
+ numPer,NPrint,LstPrint,MaxIt,IStress,IForce,dTolConv,VtkPrint
+    2    1    0   30    0    0  5.00e-02    0
+         5  8.00e-02
+         6  1.00e-01
+# Stochastics, Interaction type, iDistrib,dDistrib
+    0    0    0   5.000e-01    0   1.000e-01    0    1
+# Diff/Heat - IDIFFL,IBDIFSOLF,KHIDROPH,InitConc,DiffCoeff,Num.of D(C),ICOUPLNG,MolMass,ConcCritic,bHeat,CondCoeff
+    0    0  0.0000e+00   1.000e+01    1    0   1.000e+00   1.000e-04    1    0  1.0000e+00
+ Diffusion D(C) - Num. of pairs
+    1
+ Pairs - Concentration, Diff. coeff.
+   0.000e+00   2.000e-01
+# Migration data
+IMigration    0
+Fibers
+Fiber count, Input type
+1 2
+Fiber directions
+  1.00e+00   0.00e+00   0.00e+00    15     1     0
+Muscle fraction
+  3.00e-01
+Hunter calcium functions
+Number of functions
+    1
+    5 0.00000 0.00000 0.00000 0.00000     0
+  0.00e+00  0.00e+00
+  2.00e-01  1.00e+00
+  3.00e-01  1.00e+00
+  4.00e-01  1.00e-03
+  2.00e+00  1.00e-03
+Gordon's functions
+Number of functions
+    1
+1.000000    6
+  6.00e-01  0.00e+00
+  8.00e-01  3.44e-01
+  9.50e-01  4.40e-01
+  1.05e+00  4.40e-01
+  1.80e+00  0.00e+00
+  5.00e+00  0.00e+00
+Activation functions
+Number of activation functions
+    2
+    1    6
+  0.00e+00  0.00e+00
+  2.00e-01  1.58e-01
+  7.00e-01  1.58e-01
+  8.00e-01  1.58e-01
+  5.00e+00  1.58e-01
+  1.00e+09  2.00e-01
+    2    6
+  0.00e+00  0.00e+00
+  2.00e-01  1.58e-01
+  7.00e-01  1.58e-01
+  8.00e-01  1.58e-01
+  5.00e+00  1.58e-01
+  1.00e+09  2.00e-01
+Strain dependance function
+Points count
+    6
+  0.00e+00  0.00e+00
+  1.00e+00  5.00e-01
+  1.20e+00  5.00e-01
+  2.00e+00  0.00e+00
+  2.20e+00  0.00e+00
+  3.00e+00  0.00e+00
+Young's modulus functions
+Number of functions
+    2
+    1    6
+  0.00e+00  1.00e+00
+  1.00e+00  1.00e-03
+  1.20e+00  1.00e+00
+  2.00e+00  1.00e+00
+  2.20e+00  1.00e-03
+  1.00e+07  1.00e-03
+    2    6
+  0.00e+00  1.00e+00
+  1.00e+00  1.00e+00
+  1.20e+00  1.00e-03
+  2.00e+00  1.00e-03
+  3.00e+00  1.00e+00
+  1.00e+03  1.00e+03
+Function periods
+t1,t2,t3,dt
+1.000000 2.000000 3.000000 0.200000
+# Cell - Prescribed forces
+0 0.000000
+# Beam generation data
+0 1.000000 -1.000000 0.800000 1.000000 1.000000 0.800000 0.600000
+# Prescribed Multi Youngs Functions - Size
+    1
+# Pairs - Strech, Young modulus
+    3
+# Strech, Youngs
+   0.000e+00   5.000e+01
+   1.000e+01   2.000e+02
+   2.000e+01   6.000e+02
+# Holz data, Hypetrophy
+    1    0
+C Cycles, StepLoad, StepRev, TimeLoad, TimeRev, Penalty, dPenalty, bMuscleMod, bCompres, bScale, dScale, bMixed, bmixed2
+   10    5    6  4.00e-01  6.00e-01    1  1.00e+06    1    0    1  1.00e+00    0    0    0    0
+C Total Holz sets
+1
+C Holz Mat Set No.1
+C Levels
+1
+   1.10000
+C Hyst 
+     0
+C  Ncurves 
+    2
+C Level CIndex Hyst Type Ratio
+1 1 0 1    1.00000
+2
+1.00000 0.00000
+1.10000 10.00000
+C Level CIndex Hyst Type Ratio
+1 1 0 2    1.00000
+2
+1.00000 0.00000
+1.10000 10.00000
+C Levels
+1
+   0.50000
+C Hyst 
+     0
+C  Ncurves 
+    6
+C Level CIndex Hyst Type Ratio
+1 1 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+C Level CIndex Hyst Type Ratio
+1 2 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+C Level CIndex Hyst Type Ratio
+1 3 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+C Level CIndex Hyst Type Ratio
+1 4 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+C Level CIndex Hyst Type Ratio
+1 5 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+C Level CIndex Hyst Type Ratio
+1 6 0 -1    0.50000
+2
+0.00000 0.00000
+0.50000 16.72200
+# PLLA Exp data
+    0
+# Solid Walls
+UpperWallNum, LowerWallNum, UpperComplex, UpperAttached, LowerComplex, LowerAttached, bUppConstr, bLowConstr
+         0         0         0         0         0         0         0         0
+# 1D Solid Groups
+ n1DGroups, b1DEnabled
+    1    0
+ nID, nSegments, nNodes, dCuttof, dStiff, dCutArt, dForceAtr, nIndInter, bBeamModel, MatID, MatFunID, FluidInteraction, Strain Control Indicator
+    1     2     4   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00     1     0     1     1 3435973836     0
+ SegmentList - ID, Diam1, Diam2, X1, Y1, Z1, X2, Y2, Z2, Division
+    1   1.000000e-01   1.000000e-01  -1.000000e+00  -5.000000e-01   0.000000e+00   1.000000e+00   5.000000e-01   0.000000e+00     1
+    2   1.000000e-01   1.000000e-01  -1.000000e+00   5.000000e-01   0.000000e+00   1.000000e+00  -5.000000e-01   0.000000e+00     1
+ NodeList - ID, X, Y, Z, IDx, IDy, IDz, bFx, bFy, bFz, bVeloc, bConce
+    1  -1.000000e+00  -5.000000e-01   0.000000e+00     1     1     1     0     0     0     0     0     0
+    2   1.000000e+00   5.000000e-01   0.000000e+00     0     0     1     0     0     0     0     0     0
+    3  -1.000000e+00   5.000000e-01   0.000000e+00     1     0     1     0     0     0     0     0     0
+    4   1.000000e+00  -5.000000e-01   0.000000e+00     0     1     1     0     0     0     0     0     0
+# General Solid Groups
+ nGenSolidGroups, bGenSolidGroupsEnabled, bOrthotropy, dOrthoAngle, bLargeStrain, bArcModel, bArcQuart, b18CylModel
+    1     0     0   0.000000e+00     0     0     0     0
+ nID, nDivX, nDivY, nDivZ, dDistX, dDistY, dDistZ, dCenterX, dCenterY, dCenterZ, dRotAngle, nMatID, bMassGrowth, dGrowthConc, dGrowthDens, nNodes, nModelType, bMixedFormulation 
+    1     1     1     1   1.000000e+00   1.000000e+00   1.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00     2     0   5.040000e+01   1.000000e+03     8     0     0     0
+Muscle, Muscle element subtype, Activation, Muscle content 1d ratio, Fiber large strain
+     1     1     1   0.000000e+00     1
+ NodeList - ID, X, Y, Z, IDx, IDy, IDz, bFx, bFy, bFz, bVeloc, bConce, nCSFEDom
+    1   0.000000e+00   0.000000e+00   1.000000e+00     1     1     0     0     0     0     0     0     0
+    2   0.000000e+00   0.000000e+00   0.000000e+00     1     1     1     0     0     0     0     0     0
+    3   0.000000e+00   1.000000e+00   1.000000e+00     1     0     0     0     0     0     0     0     0
+    4   0.000000e+00   1.000000e+00   0.000000e+00     1     0     1     0     0     0     0     0     0
+    5   1.000000e+00   0.000000e+00   1.000000e+00     0     1     0     0     0     0     0     0     0
+    6   1.000000e+00   0.000000e+00   0.000000e+00     0     1     1     0     0     0     0     0     0
+    7   1.000000e+00   1.000000e+00   1.000000e+00     0     0     0     0     0     0     0     0     0
+    8   1.000000e+00   1.000000e+00   0.000000e+00     0     0     1     0     0     0     0     0     0
+# Domain Type 
+    1
+# Solid  Tissues 3D 
+ nTissueDomains3D, bTissueDomainsEnabled, bBoundFaces, nBoundFaces, bUniMeshLay, bDisplacement
+    1    0    0    0    0
+# Solid Tissue 3D, Direction, Div X, Y, Z, Length X, Y, Z, nDomain, Center X, Y, Z, Rot X, Y Z, bFromSTL, bUniform, nMatID, dMaxEA, bChamberXDistributed, nUniLayers, dShellThick
+    0    2    2    2   2.00000e+00   2.00000e+00   4.00000e+00    3   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    0    0    2   1.00000e+01    0    0    1   4.00000e-01    0    0    1    0
+Ventricles data
+Left Ventricle
+1
+Center x,y,z Aortic x,y,z Mitral x,y,z
+     0.000     0.000     0.000    -2.500     0.000     0.000     2.000     0.000     0.000
+Generate Full, Generate Lid, Radius1,Radius2, Height, ThickessX, ThicknessY, AorticH, AorticW, MitralH, MitralW, Mitral body height, MitralCoap
+1 0      5.500     5.500    10.500     0.500     0.500     1.000     1.000     1.000     1.000     0.100     0.000
+Division R, Division C, Division T
+4 4 1
+Create elems, Constrain solid top
+1 0
+Right Ventricle
+0
+# Inlet Forces and Constraints, bSolidFx3DIn, dSolidFx3DIn, nFunSolidFx3DIn, bSolidFy3DIn, dSolidFy3DIn, nFunSolidFy3DIn, bSolidFz3DIn, dSolidFz3DIn, nFunSolidFz3DIn, bConstX3DIn, bConstY3DIn, bConstZ3DIn
+    0   1.00000e+00    1    0   1.00000e+00    1    0   1.00000e+00    1    1    1    1
+# Outlet Forces and Constraints, bSolidFx3DOut, dSolidFx3DOut, nFunSolidFx3DOut, bSolidFy3DOut, dSolidFy3DOut, nFunSolidFy3DOut, bSolidFz3DOut, dSolidFz3DOut, nFunSolidFz3DOut, bConstX3DOut, bConstY3DOut, bConstZ3DOut, bPrescSolidVeloc3D, dPrescSolidVeloc3D, nFunIDSolidVeloc3D
+    0   1.00000e+00    1    0   1.00000e+00    1    0   1.00000e+00    1    0    0    0    0   1.00000e+00    1   1.00000e+00
+# Muscle Data, bMuscleEnabled, Activation ID, IMuscleLargeStrain, Muscle element subtype, Muscle content 1d
+    1    1    0    1  1.0000e+00
+Fiber points count
+0
+# Uniform layers data
+ -1.00e+02  0.00e+00  0.00e+00  0.00e+00  1.00e+00  0.00e+00  5.00e-02    3    0
+# CSFE Smeared Params
+ bCSFESmeared 
+    0 
+# Heart Visualization Parameters 
+    0
+Generate Mesh, Generate Fibs, Table Fibs, Keep existing Center, Linear/Cubic fiber dir, ThetaEnd, ThetaEpi
+    1    1    0    0    1-1.04720 1.04720
+# CSFE Fiber Groups
+ bCSFESmearedFiber
+     0 
+# Lung Model 
+ bEnabled 
+    0
+# LV Param Model 
+ bEnabled 
+    1    1
+dBaseDiameter, dLenOfBase, dFluidBottomRadius, nBaseDivision, dDiamAorta, dLenAorta, nAortaDivision, dDiamMitral, dLenMitral, nMitralDivision, LenAtrium, nAtriumDiv
+     5.7000e+01     4.5600e+01     1.5000e+01    6     3.0400e+01     1.9000e+01   10     1.7100e+01     1.9000e+01    8     1.9000e+01    3
+dDistAortmiddle, dDiamStartAort, dDiamEndAort, dAnglAortBase, dAnglMitralBase, nDivArteries, bSolidWall, dSolidWThick, dBotBaseRad, dLenBotBase, nDivBotBase
+     1.0000e-01     8.0000e-01     8.0000e-01     1.5000e+01     1.5000e+01    5    1     6.6000e+00    1     1.0000e+01     6.0000e+00    1     1   1.0000e+00
+# Prescribed value - Type (Velocity, Pressure), Value
+       0   1.0000e+00     3  -7.0000e+00     1        0   0.0000e+00     4   0.0000e+00     1
+# Membrane/Shell element
+       0        0        1        0        1        1 0.00000
+Echo data Enabled, Membrane, Shell, NLayers, FibAxis
+0 0 0 1 0
+# 3D Element Type
+  Type (0-Hexa, 1-Tetra)
+    0
+# Element nodes
+  Type
+    0
+# Formulation Data
+  Formulation (0-penalty, 1-mixed), Penalty factor, PakFS indicator, bHeartReal, bAorta, bAtrium, bSolid, bSolidCon
+    1  1000000000    0    1    0    0    0    0
+# Solid - Fluid Interaction
+  Coupling type (0-Strong, 1-Loose), and SF scaling Factor, bDeffFluid, bHeartMod, dValveOpenT, dValveCloseT
+    0  1.000000    1    1  0.100000  0.400000
+# Solver Type
+  Type (0-Velocity, 1-Displacement)
+    0
+RealHeart example
+ dPrescVelocInn, dPrescVelocOut, dPrescPressInn, dPrescPressOut, nPrescPressInnFunID, nPrescPressOutFunID, nPrescVelInnFunID, nPrescVelOutFunID
+           1           0          -7           0    1    1    3    4
+ bPrescPressAort, dPrescPressAort, nPrescPressAortFunID, bPrescPressMitr, dPrescPressMitr, nPrescPressMitrFunID, bPrescVelocAort, dPrescVelocAort, nPrescVelocAortFunID, bPrescVelocMitr, dPrescVelocMitr, nPrescVelocMitrFunID
+    0           1    4    0           1    3    0           1    4    0           1    3
+# General Properties
+# Continuum,Pipes,Convection,Diffusion,Dynamics,Homogenization,SolverType,HeatTransfer,LagrangeM,EyeModel,EyeAxiSym,CapDisj,AutoPresc,bForcePAKT,dForcePAKT,bImmune
+         1         1         0         1         0         0         1         0         0         1    0    0    0    0    0    0    0  1.000e+00    0    0
+# Fluid Properties
+ Domain Type: 0 = 2D, 1 = 3D, Groups, nGroups1D, etc...
+  1     1     1   0  1.000e+00   1   1   0  1.000e+00   1   0  1.000e+00   1   0  1.000e+00   1   1   0   0  1.000e+00  1  0   0  1.000e+00   0  1.000e+00
+  MaxArea, Conv. Mat. ID, Diff. Mat. ID
+   1.000e+00            1            1
+# Fluid Domain 3D, Direction, Div X, Y, Z, Length X, Y, Z, nDomain, Center X, Y, Z, Rot X, Y Z, bFromSTL, bUniform, nConvmat, bPipes, dMaxEA, nDiffMatID, bTumors, nTumors
+    0    1    1    1   1.00000e+00   1.00000e+00   1.00000e+00    5   5.00000e-01   5.00000e-01   5.00000e-01   0.00000e+00   0.00000e+00   0.00000e+00    0    0    1    0   1.00000e+01    1    0    1    0    0    1    1    1
+ nNumMolPresc 
+    1
+# bPrescrInl, bPrescrOut, SegTypeInl, SegTypeOut,dPrescrInl, dPrescrOut, nFuncInl, nFuncOut
+    0    0    1    1   0.00000e+00   0.00000e+00    1    1
+# bConceInl, bConceOut, dConceInl, dConceOut, nFuncInl, nFuncOut
+    0    0   0.00000e+00   0.00000e+00    1    1
+# bPrescrInlCap, bPrescrOutCap, SegTypeInlCap, SegTypeOutCap,dPrescrInlCap, dPrescrOutCap, nFuncInlCap, nFuncOutCap
+    0    0    1    1   1.00000e+00   0.00000e+00    1    1
+# bConceInlCap, bConceOutCap, dConceInlCap, dConceOutCap, nFuncInlCap, nFuncOutCap
+    0    0   1.00000e+00   0.00000e+00    1    1
+# Prescribed Values Electric Transport Capill
+ bPotCapIn, nFunIDPotCapIn, dPotCapIn, bPotCapOut, nFunIDPotCapOut, dPotCapOut, bCurrDCapIn, nFunIDCurrDCapIn, dCurrDCapIn, bCurrDCapOut, nFunIDCurrDCapOut, dCurrDCapOut
+    0     1    1.00000e+00     0     1    1.00000e+00     0     1    1.00000e+00     0     1    1.00000e+00
+# Prescribed Values Electric Transport EXE
+ bPotECMIn, nFunIDPotECMIn, dPotECMIn, bPotECMOut, nFunIDPotECMOut, dPotECMOut, bCurrDECMIn, nFunIDCurrDECMIn, dCurrDECMIn, bCurrDECMOut, nFunIDCurrDECMOut, dCurrDECMOut
+    0     1    1.00000e+00     0     1    1.00000e+00     0     1    1.00000e+00     0     1    1.00000e+00
+# Uniform layers data
+ -1.00e+02  0.00e+00  0.00e+00  0.00e+00  1.00e+00  0.00e+00  5.00e-02    3    0
+# Pipes Properties
+#     Segments, Nodes, WallDiffus, ConnectType, bDeformable, bFormulation, bLargeNeuron
+    1     2     0     0     0     0     1
+    1   5.000000e-01   5.000000e-01   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   3.292679e+01  -2.785830e+01   0.000000e+00   4.858065e+00  -2.664691e+01   0.000000e+00   1   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+    1   3.292679e+01  -2.785830e+01   0.000000e+00     0     1     1     0
+       1.000000e+00   1
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     0     0   0.000000e+00
+    2   4.858065e+00  -2.664691e+01   0.000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     0     0   0.000000e+00
+# Concentration Functions - Number of Functions
+    1
+ nFunID, NumPoint
+    1    2
+  0.00e+00  1.00e+00
+  1.00e+03  1.00e+00
+# AutoGen Data
+  AutoModelType,   AutoL0,   nAutoDiv,   bAutoRandom,   dAutoHmax,      bAutoContinuum,       bAutoUniform,  bAutoHomogeniz 
+    0    5.00000e+00     2     0    2.00000e-01     1     1     0    5.00000e+00     2
+  nAutoDirection,   bAutoPinn,   dAutoPinn,   bAutoPout,   dAutoPout,   bAutoCinn,  dAutoCinn,  bAutoCout, dAutoCout, bAutoVout, dAutoVout, bPrescInCont, bPrescWhole, bAutoCinnImm, dAutoCinnImm, bAutoCoutImm, dAutoCoutImm, bPrescInCapImm, bPrescInTissImm
+    0     0    1.00000e+00     0    0.00000e+00     1    1.00000e+00     1    0.00000e+00     0    1.00000e-01     1     0     0     0    1.00000e+00     0    1.00000e+00     0     0
+  dAutoDiam,   dAutoVisc,   dAutoDiff,   dAutoPoros,   dAutoPerme,   dAutoLeak,  dAutoWallD,  dAutoWallThick, nAutoPipeDiv 
+   1.00000e+01    1.00000e-03    1.00000e+02    0.00000e+00    0.00000e+00    5.00000e-02    1.00000e+01    1.00000e-01     1
+  bAutoRandDiam,   dAutoRandDiam,   bAutoRandVisc,   dAutoRandVisc,   bAutoRandWallD,   dAutoRandWallD,  bAutoDiagonal,  dAutoDiamDiag 
+    0    1.00000e+01     0    1.00000e+01     0    1.00000e+01 3452816845    1.00000e-01 
+  bPipeGen,   bPipeGenY,   bGaussianD,   bPipeConn,   bContinDiv 
+  1   1   0   0   0   1   1   1.000000   1   0.000000   0   1.000000   0   0.000000   1   1
+# Time Periods
+ numPer,NPrint,LstPrint,VelCapPrint,MaxIt,IGraph,IForce,dTolConv,dTolLam,VtkPrint
+    2    1    0    0   30    1    0  5.00e-02  1.00e-03    0
+         5  8.00e-02
+         6  1.00e-01
+# Materials - InitConc, DiffMatNum, ConvMatNum, HeatMatNum
+  0.0000e+00    1    1    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Concentration, Diff. coeff.
+   0.000e+00   1.000e+01
+ D(P) - Num. of pairs
+    1
+ Pairs - Pressure, Darcy coeff.
+   0.000e+00   1.000e+00
+ D(P) - Num. of pairs
+    1
+ Pairs - Temp, Density, SpecHeat, CondCoeff
+   0.000e+00   1.000e+00   2.000e+00   5.000e+00
+# Smeared Data - bSmeared, nType, dVolF, dDiam, dThick, dDiffC, dPart, bPart, bGauss, bRandVF, dRandVF, bSmeTable
+    1    0   1.000e-02   1.000e-01   1.000e-02   1.000e+01   1.000e+00    0    0    0   2.000e+01    0
+# Capillary Smeared model Data - nSmearedInd, bSmeCapConv, dSmeCapVisc, dSmeTisDarcy, dSmeWallLeak, bSmeCapDiff, dSmeCapDiff, bSmeTissDiff, bSmeTissCon
+    5    0   1.000e-03   1.000e-01   5.000e-02    0   1.000e+02   1.000e+01    1    1
+# General Smeared Parameters
+# General Data - Indicators
+ # nDarcyCoeff,nViscPipe,nViscCapill,nHydrPipe,nHydrCapill,nDarcyTens
+    0    0    0    0    0    0
+# General Data - Values
+ # dDarcyCoeff,dViscPipe,dViscCapill,dHydrPipe,dHydrCapill
+  1.000000e+00  1.000000e-03  1.000000e-03  1.000000e+00  1.000000e+00
+# Data for capillary diameters
+ dCapDiamX,m_dCapDiamY, m_dCapDiamZ 
+  1.000000e+00  1.000000e+00  1.000000e+00
+# Molucules and Cells data
+ nMolNumber,nCellNumber
+    1    1
+# Molecule - Indicators
+# nIndPipe,nIndExt,nIndCap,nIndPartPipe,nIndPartCap,nIndAdhePipe,nIndAdheCap,nIndWallPipe,nIndWallCap,nIndWallCap,nIndMolType
+    1    1    1    0    0    0    0    0    1    0
+# Molecule - Values
+# sMolName,dDiffPipe,dDiffExt,dDiffCapX,dDiffCapY,dPartPipe,dPartCap,dAdhePipe,dAdheCap,dDeAdhePipe,dDeAdheCap,dWallPipe,dWallCap,dInitConcPipe,dInitConcExt,dMolarMass
+Mol1  1.000000e+02  1.000000e+02  1.000000e+02  1.000000e+02  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+02  1.000000e+02    0  1.000000e+00    0  1.000000e+00  1.000000e+00  1.000000e+02  1.000000e+00  1.000000e+00  1.000000e+00
+# Cells Params data
+ nCellParamNumber
+    1
+# Cell Params - Values
+# nIndDiffCell,dDiffCell,nIndPartCell,dPartCell,nIndActiveCell,dActiveInCell,dActiveOutCell,nIndSourceCell,dSourceCell,nIndAdhesCell,dAAdhesCell,dDeAdhesCell,nIndWallCell,dWallCell,bInitConcCell,dInitConcCell,nIndCritCell,dCritCell,nVesicles
+    1  1.000000e+02    0  1.000000e+00    0  1.000000e+00  1.000000e+00    0  1.000000e+00    0  1.000000e+00  1.000000e+00    1  1.000000e+02    0  1.000000e+00    0  1.000000e+00    0
+# Smeared Cell Data
+ nSmeCells
+    1
+# sCellName,nMigration,dVelMigration,dVolFraction,dDiameter,bCellInterior,bAgenSourceCell,nFunIDActCell,nFunIDDecCell,nVesicles
+Cell1    0  1.000000e+00  1.000000e-01  1.000000e+00    0    0    1    1    0
+# Lymphatic System Data
+# bLymDiff, bLymConv,dLymVolFract,dLymVesDiam,dLymHydrCoef,dLymDarTenXX,dLymDarTenYY,dLymDarTenXY,bLymPrescAll,dLymPrescAll
+    0    0  1.000000e-02  1.000000e-01  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00    0  0.000000e+00
+# Tissue Cells, Capillaries and Neurons
+ numCells, numCapillaries, bCells, bCapillaries
+    1    1    0    0
+# nID,     dX, dY, dZ, ElipseA, ElipseB, ElipseC, AngleX,AngleY,AngleZ,Div,DiffMat,dMaxArea,bInter,b1DMembr,nDifMat1D
+    1   2.00000e+00   2.00000e+00   2.00000e+00   1.00000e+00   1.00000e+00   1.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    2    1   1.00000e+00    1    0    1  0
+  bPartOut, dPartOut, bPartInn, dPartInn, RandX, RandY, RandZ, RandEA, RandEB, RandEC, RandAnX, RandAnY, RandAnZ
+    1   2.00000e+00    0   1.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    0
+# nID,     dX,             dY,       ElipseA,       ElipseB,      Angle,    Div, bWall, dThick, dMaxEA, b1DColl, nFunID, bMulti, nMatID, nType
+    1   2.00000e+00   2.00000e+00   5.00000e-01   5.00000e-01   0.00000e+00   10    1   2.00000e-01   1.00000e+00    0    1  0  1  1  0
+  bPBloodW, dPBloodW, bPWallS, dPWallS, bPColECM, dPColECM, bPWallECM, dPWallECM,  RandX,      RandY,        RandEA,       RandEB,     RandAngle
+    0   1.00000e+00    0   1.00000e+00    0   1.00000e+00    0   1.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    1    1   1.00000e+00
+#Eye Model data
+ nEyeRegions
+    0
+#Countour data
+ nEyeContours
+    0
+# Prescribed Data
+ nPrescribed
+    0
+# Eye Mass Function
+ nFunPoints
+    2
+ dTime, dValue
+  0.00e+00  0.00e+00
+  1.00e+03  1.00e+00
+# General Ionic and Electric Data
+ bIonicTrans, bElectrField, bIndIonECS, bIndIonCap
+    0    4    0    0
+# dFaradConst, dTemperature, dGasConstant, dPHExSpace, dEPotCapill, dEPotExCell, dDielConstECS, dEPotPipe, dEPotCape, dSmallFibRv
+   9.64850e-01   3.10000e+02   8.31000e+00   5.00000e+00   0.00000e+00   0.00000e+00   1.00000e-01   0.00000e+00   0.00000e+00   1.00000e-03
+# Flags for electric flow
+ bIndPipee, bIndCapee, bIndExee, bIndCellee, bIndOrgee
+    1    1    1    1    0
+# dGAPipee, dGACapee, dGEXxx, dGEXyy, dGEXzz, dGMPipe, dGMCap, dCapaPipe, dCapaCap
+   1.00000e+05   1.00000e+05   1.00000e+00   1.00000e+00   1.00000e+00   1.00000e+02   1.00000e+02   1.00000e-01   1.00000e-01
+# bIndPipeDia, dPipeDiae, bIndCapDia, dCapDiae, bIndCapGa, bIndTissGa, dCondRatio
+    0   1.00000e-01    0   1.00000e-01    0    0   3.33000e-01
+# bIndIonK, bIndIonNa, bIndIonKPf, bIndIonNaPf, nLenUnits, dEPotEqK, dEPotEqNa, IndNoble, IndOhara,IOharaFull
+    0    0    0    0    1  -1.00000e+02   4.00000e+01    0    1
+# bIndIonNaO,bIndIonCa,bIndIonTo,bIndIonKr,bIndIonKs,bIndIonK1,bIndIonNaCa,bIndIonNaK,bIndIonNab,bIndIonCab,bIndIonKb,bIndIonPca,bIndIonTime
+    1    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0
+# Molecule General Data
+ nMolecules
+    1
+# dValence ,dDissocConst, dAcidValue, dWaterContent, dSorptionKn, dSorptionKd, dConstGamaN, dConstGamaD, dApex, dApdex, bIndIonECS
+   4.00000e+00   1.00000e+00  -1.00000e+00   6.00000e-01   1.00000e-02   3.00000e-02   1.05000e+00   2.05000e+00   3.00000e-02   4.00000e-02    1
+# Cells Params data
+ nCellParamNumber
+    1
+# Cell Params - Values
+ #dApCell,dApdCell,nVesicles
+   1.00000e+00   1.00000e+00    0
+# Cell Electric Parameters
+ nCells
+    1
+# Cell Electric Data
+ bIndIonic, bIndElectr, dEPotential, dPHValue, dDielecConst, dGCELLVx, dGCELLVy, dGCELLVz, dGMCELL, dCAPACELV, nVesicles, bIndIonicK, IndIonicNa, bEpotPresc, dEpotPresc, bCurrPresc, dCurrPresc
+    1    1   0.00000e+00   3.00000e+00   1.00000e-02   1.00000e+01   1.00000e+01   1.00000e+01   2.20000e+01   4.50000e+00    0    0    0    1  -2.00000e+01    0   0.00000e+00
+# NICHE 3D Model
+    0
+# 1/8 Sphere Model
+    0

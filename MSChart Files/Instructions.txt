@@ -1,0 +1,4 @@
+1) Copy mschart20.ocx to "C:\Windows\System32"
+2) Run the command proompt as administrator
+3) Within command line navigate to "C:\Windows\System32" directory 
+4) Run the command "regsvr32 mschart20.ocx"

@@ -1,0 +1,102 @@
+# General Properties
+# Continuum,Pipes,Convection,Diffusion,Dynamics,Homogenization,SolverType,LagrangeM
+         1         0         1         1         0         0         1         0
+# Fluid Properties
+ Domain Type: 0 = 2D, 1 = 3D, Groups
+         0          1          0
+  MaxArea, Conv. Mat. ID, Diff. Mat. ID
+   1.000e+00            1            1
+# Tissue2D Data (NumPoints, dMaxArea, ConvMat, DiffMat, bPipes, InnDomain, Thickness, Uniform, OxyConsumptLiv)
+    4    1.000e+03            1            1            0            0    1.000e+00            0    5.000e-02
+         1   -9.00000e+02   -9.00000e+02    0.00000e+00     1     1     0     0     0     0     1 61440
+         2   -9.00000e+02    9.00000e+02    0.00000e+00     1     1     0     0     0     0     1 61440
+         3    9.00000e+02    9.00000e+02    0.00000e+00     1     1     0     0     0     0     1 61440
+         4    9.00000e+02   -9.00000e+02    0.00000e+00     1     0     0     0     0     0     1 61440
+# Concentration Functions - Number of Functions
+    1
+ nFunID, NumPoint
+    1    2
+  0.00e+00  8.50e-02
+  1.00e+03  8.50e-02
+# AutoGen Data
+  AutoModelType,   AutoL0,   nAutoDiv,   bAutoRandom,   dAutoHmax,      bAutoContinuum,       bAutoUniform,  bAutoHomogeniz 
+    0    5.00000e+00     2     0    2.00000e-01     1     1     0
+  nAutoDirection,   bAutoPinn,   dAutoPinn,   bAutoPout,   dAutoPout,   bAutoCinn,  dAutoCinn,  bAutoCout, dAutoCout, bAutoVout, dAutoVout, bPrescInCont, bPrescWhole
+    0     0    1.00000e+00     0    0.00000e+00     1    1.00000e+00     1    0.00000e+00     0    1.00000e-01     0     0
+  dAutoDiam,   dAutoVisc,   dAutoDiff,   dAutoPoros,   dAutoPerme,   dAutoLeak,  dAutoWallD,  dAutoWallThick, nAutoPipeDiv 
+   1.00000e+00    1.00000e-03    1.00000e+02    0.00000e+00    0.00000e+00    5.00000e-02    1.00000e+01    1.00000e-01     1
+  bAutoRandDiam,   dAutoRandDiam,   bAutoRandVisc,   dAutoRandVisc,   bAutoRandWallD,   dAutoRandWallD,  bAutoDiagonal,  dAutoDiamDiag 
+    0    1.00000e+01     0    1.00000e+01     0    1.00000e+01     0    1.00000e-01 
+  bAutoPipeGen,   bAutoPipeGenY,   bAutoGaussianD,   bAutoPipeConn,   bAutoContinDiv 
+    1     1     0     0     0
+# Time Periods
+ numPer,NPrint,LstPrint,VelCapPrint,MaxIt,IGraph,IForce,dTolConv,dTolLam
+    1    1    0    1   30    1    0  5.00e-02  1.00e-03
+        60  3.00e+00
+# Materials - InitConc, DiffMatNum, ConvMatNum
+  0.0000e+00    1    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Concentration, Diff. coeff.
+   0.000e+00   1.000e+03
+ D(P) - Num. of pairs
+    1
+ Pairs - Pressure, Darcy coeff.
+   0.000e+00   1.000e+00
+# Smeared Data - bSmeared, nType, dVolF, dDiam, dThick, dDiffC, dPart, bPart, bGauss, bRandVF, dRandVF, bOxygenCons, dAlpha, dPm, bSmearedCons, dSmearedCons
+    1    0   4.000e-01   8.000e+00   1.000e+00   1.000e+03   1.000e+00    0    0    0   2.000e+01    1   0.000e+00   0.000e+00    1   5.000e-02
+# Capillary Smeared model Data - nSmearedInd, bSmeCapConv, dSmeCapVisc, dSmeTisDarcy, dSmeWallLeak, bSmeCapDiff, dSmeCapDiff, bSmeTissDiff, bSmeTissCon
+    5    1   1.000e-03   1.000e+00   0.000e+00    1   1.000e+03   1.000e+03    1
+# Tumor Metastatic
+# MetaTumors, MetaSources, MetaSinks, bPartitioning
+    1    28    16     0
+# iTum, dX, dY, dRadius, dVolFract, dCapDiameter, nPoints, dWallThick, dPermeabil, dDiffCoeff, dMaxArea, dPartit, dDarcy, dOxyConsumpt, dViscCoeff, dDiffCoeff, nDomIDTum
+    1   0.000000e+00   0.000000e+00   1.000000e+02   5.000000e-02   8.000000e+00    18   1.000000e+00   0.000000e+00   1.000000e+03   1.000000e+03   1.000000e+00   1.000000e+00   3.000000e-02   3.000000e-03   1.000000e+03     1
+# bDilZone, dDilThick, dDilCapDiam, dDilVolFract, dDilDiffCoeffW, dDilPermeab, dDilWallThick, dDilMaxArea, dDilPartit, dDilDarcy, dDilOxyConsum, dDilViscCoeff, dDilDiffCoeff
+    0   3.000000e+01   8.000000e+00   2.000000e-01   1.000000e+03   0.000000e+00   1.000000e+00   1.000000e+03   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e-03   1.000000e+00
+# Sources - CenterX, CenterY, dRadius, bContour, nContDiv, dPress, nPressFun, dConce, nConceFun, bTumorInn, nTumIDInn
+    1  -5.950000e+02  -6.830000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    2  -1.110000e+02  -6.080000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    3   1.440000e+02  -6.620000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    4   6.440000e+02  -6.190000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    5  -5.360000e+02  -3.960000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    6  -2.040000e+02  -3.980000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    7   2.730000e+02  -4.200000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    8   5.490000e+02  -4.020000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+    9  -6.130000e+02  -1.910000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   10  -1.710000e+02  -2.180000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   11   8.570000e+01  -1.770000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   12   6.210000e+02  -1.900000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   13  -5.100000e+02  -2.240000e+01   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   14  -2.700000e+02   8.400000e+00   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   15   2.410000e+02  -3.530000e+01   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   16   4.730000e+02   1.420000e+01   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   17  -6.310000e+02   2.110000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   18  -9.820000e+01   2.250000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   19   1.350000e+02   2.180000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   20   5.870000e+02   1.700000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   21  -4.970000e+02   4.330000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   22  -2.670000e+02   4.530000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   23   2.720000e+02   3.960000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   24   5.300000e+02   4.130000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   25  -6.000000e+02   6.580000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   26  -1.390000e+02   6.150000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   27   1.420000e+02   6.390000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+   28   6.690000e+02   6.890000e+02   2.000000e+01     1     9   2.500000e+02     1   1.000000e+00     1     0     1     1
+# Sinks - CenterX, CenterY, dRadius, bContour, nContDiv, dPress, nPressFun, dConce, nConceFun, bTumorInn, nTumIDInn
+    1  -3.900000e+02  -6.950000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    2   3.590000e+02  -6.130000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    3  -7.890000e+02  -4.560000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    4   2.500000e+01  -4.780000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    5   7.770000e+02  -4.370000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    6  -3.830000e+02  -1.950000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    7   3.620000e+02  -1.970000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    8  -7.920000e+02   2.700000e+00   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+    9   7.530000e+02   3.820000e+00   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   10  -3.600000e+02   2.580000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   11   3.560000e+02   2.650000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   12  -7.060000e+02   4.020000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   13  -4.800000e+01   4.790000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   14   7.500000e+02   4.650000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   15  -3.610000e+02   6.110000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704
+   16   3.670000e+02   6.690000e+02   1.250000e+01     1     9   0.000000e+00     1   0.000000e+00     1     0     1 2500312704

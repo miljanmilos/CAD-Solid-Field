@@ -1,0 +1,652 @@
+#T
+# General Properties
+# Continuum,Pipes,Convection,Diffusion,Dynamics,Homogenization,SolverType,HeatTransfer,LagrangeM,EyeModel,EyeAxiSym,CapDisj,AutoPresc,bForcePAKT,dForcePAKT,bImmune
+         1         1         0         1         0         0         1         0         0         1    0    0    0    0    0    0    0  1.000e+00    0    0
+# Fluid Properties
+ Domain Type: 0 = 2D, 1 = 3D, Groups, nGroups1D, etc...
+  0     1     1   0  1.000e+00   1   1   0  1.000e+00   1   0  1.000e+00   1   0  1.000e+00   1   0   0   0  1.000e+00  0  0   0  1.000e+00   0  1.000e+00
+  MaxArea, Conv. Mat. ID, Diff. Mat. ID
+   1.000e+00            1            1
+# Tissue2D Data (NumPoints, nMoleculeNum, dMaxArea, ConvMat, DiffMat, bPipes, InnDomain, Thickness, Uniform, nHoles, bPipeImmers, bPipeDirData, bPipeOuter, bAgenSource, nFunIDAct, nFunIDDecay)
+   32     1    1.000e+05            1            1            1            0    4.000e+00            0     0     0     0     0     0     1     1
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         1   1.0000000e+02   1.0000000e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         2   9.2426407e+01   1.0656854e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         3   7.4063722e+01   1.1649013e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         4   6.3794969e+01   1.1935199e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         5   5.0000000e+01   1.2071068e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         6   3.6205031e+01   1.1935199e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         7   2.5936278e+01   1.1649013e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         8   7.5735931e+00   1.0656854e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+         9   7.1054274e-15   1.0000000e+02   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        10  -6.5685425e+00   9.2426407e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        11  -1.6490129e+01   7.4063722e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        12  -1.9351992e+01   6.3794969e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        13  -2.0710678e+01   5.0000000e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        14  -1.9351992e+01   3.6205031e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        15  -1.6490129e+01   2.5936278e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        16  -6.5685425e+00   7.5735931e+00   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        17  -1.4210855e-14   7.1054274e-15   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        18   7.5735931e+00  -6.5685425e+00   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        19   2.5936278e+01  -1.6490129e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        20   3.6205031e+01  -1.9351992e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        21   5.0000000e+01  -2.0710678e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        22   6.3794969e+01  -1.9351992e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        23   7.4063722e+01  -1.6490129e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        24   9.2426407e+01  -6.5685425e+00   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        25   1.0000000e+02  -1.4210855e-14   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        26   1.0656854e+02   7.5735931e+00   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        27   1.1649013e+02   2.5936278e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        28   1.1935199e+02   3.6205031e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        29   1.2071068e+02   5.0000000e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        30   1.1935199e+02   6.3794969e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        31   1.1649013e+02   7.4063722e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# nContNumber, dX, dY, dZ, nNODC, bPrescExePotent, bPrescExeCurrD, bPrescCapPotent, bPrescCapCurrD
+        32   1.0656854e+02   9.2426407e+01   0.0000000e+00     0     0     0     0     0
+# nMolNumber, SegType, bPrescPress, bPrescConce, bPrescPressCap, bPrescConceCap, SegTypeCap
+         1     1     0     0     0     0     1
+# Cells Number
+ nCells
+    0
+# Pipes Properties
+#     Segments, Nodes, WallDiffus, ConnectType, bDeformable, bFormulation, bLargeNeuron
+   76    52     1     0     0     0     0
+    1   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01  -2.0710678e+01   0.0000000e+00   6.4142136e+01  -6.5685425e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    2   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01  -6.5685425e+00   0.0000000e+00   7.8284271e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    3   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   7.5735931e+00   0.0000000e+00   9.2426407e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    4   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   2.1715729e+01   0.0000000e+00   1.0656854e+02   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    5   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.0656854e+02   3.5857864e+01   0.0000000e+00   1.2071068e+02   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    6   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.5936278e+01  -1.6490129e+01   0.0000000e+00   3.5857864e+01  -6.5685425e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    7   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01  -6.5685425e+00   0.0000000e+00   5.0000000e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    8   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   7.5735931e+00   0.0000000e+00   6.4142136e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    9   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   2.1715729e+01   0.0000000e+00   7.8284271e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   10   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   3.5857864e+01   0.0000000e+00   9.2426407e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   11   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   5.0000000e+01   0.0000000e+00   1.0656854e+02   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   12   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.0656854e+02   6.4142136e+01   0.0000000e+00   1.1649013e+02   7.4063722e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   13   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00  -6.5685425e+00   0.0000000e+00   2.1715729e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   14   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   7.5735931e+00   0.0000000e+00   3.5857864e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   15   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   2.1715729e+01   0.0000000e+00   5.0000000e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   16   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   3.5857864e+01   0.0000000e+00   6.4142136e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   17   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   5.0000000e+01   0.0000000e+00   7.8284271e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   18   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   6.4142136e+01   0.0000000e+00   9.2426407e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   19   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   7.8284271e+01   0.0000000e+00   1.0656854e+02   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   20   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -6.5685425e+00   7.5735931e+00   0.0000000e+00   7.5735931e+00   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   21   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   2.1715729e+01   0.0000000e+00   2.1715729e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   22   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   3.5857864e+01   0.0000000e+00   3.5857864e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   23   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   5.0000000e+01   0.0000000e+00   5.0000000e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   24   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   6.4142136e+01   0.0000000e+00   6.4142136e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   25   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   7.8284271e+01   0.0000000e+00   7.8284271e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   26   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   9.2426407e+01   0.0000000e+00   9.2426407e+01   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   27   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -1.6490129e+01   2.5936278e+01   0.0000000e+00  -6.5685425e+00   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   28   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -6.5685425e+00   3.5857864e+01   0.0000000e+00   7.5735931e+00   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   29   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   5.0000000e+01   0.0000000e+00   2.1715729e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   30   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   6.4142136e+01   0.0000000e+00   3.5857864e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   31   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   7.8284271e+01   0.0000000e+00   5.0000000e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   32   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   9.2426407e+01   0.0000000e+00   6.4142136e+01   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   33   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   1.0656854e+02   0.0000000e+00   7.4063722e+01   1.1649013e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   34   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -2.0710678e+01   5.0000000e+01   0.0000000e+00  -6.5685425e+00   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   35   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -6.5685425e+00   6.4142136e+01   0.0000000e+00   7.5735931e+00   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   36   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   7.8284271e+01   0.0000000e+00   2.1715729e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   37   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   9.2426407e+01   0.0000000e+00   3.5857864e+01   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   38   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   1.0656854e+02   0.0000000e+00   5.0000000e+01   1.2071068e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   39   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01  -2.0710678e+01   0.0000000e+00   3.5857864e+01  -6.5685425e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   40   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01  -6.5685425e+00   0.0000000e+00   2.1715729e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   41   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   7.5735931e+00   0.0000000e+00   7.5735931e+00   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   42   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   2.1715729e+01   0.0000000e+00  -6.5685425e+00   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   43   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -6.5685425e+00   3.5857864e+01   0.0000000e+00  -2.0710678e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   44   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.4063722e+01  -1.6490129e+01   0.0000000e+00   6.4142136e+01  -6.5685425e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   45   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01  -6.5685425e+00   0.0000000e+00   5.0000000e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   46   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   7.5735931e+00   0.0000000e+00   3.5857864e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   47   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   2.1715729e+01   0.0000000e+00   2.1715729e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   48   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   3.5857864e+01   0.0000000e+00   7.5735931e+00   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   49   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   5.0000000e+01   0.0000000e+00  -6.5685425e+00   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   50   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00  -6.5685425e+00   6.4142136e+01   0.0000000e+00  -1.6490129e+01   7.4063722e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   51   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01  -6.5685425e+00   0.0000000e+00   7.8284271e+01   7.5735931e+00   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   52   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   7.5735931e+00   0.0000000e+00   6.4142136e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   53   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   2.1715729e+01   0.0000000e+00   5.0000000e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   54   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   3.5857864e+01   0.0000000e+00   3.5857864e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   55   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   5.0000000e+01   0.0000000e+00   2.1715729e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   56   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   6.4142136e+01   0.0000000e+00   7.5735931e+00   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   57   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.5735931e+00   7.8284271e+01   0.0000000e+00  -6.5685425e+00   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   58   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.0656854e+02   7.5735931e+00   0.0000000e+00   9.2426407e+01   2.1715729e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   59   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   2.1715729e+01   0.0000000e+00   7.8284271e+01   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   60   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   3.5857864e+01   0.0000000e+00   6.4142136e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   61   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   5.0000000e+01   0.0000000e+00   5.0000000e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   62   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   6.4142136e+01   0.0000000e+00   3.5857864e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   63   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   7.8284271e+01   0.0000000e+00   2.1715729e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   64   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   2.1715729e+01   9.2426407e+01   0.0000000e+00   7.5735931e+00   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   65   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.1649013e+02   2.5936278e+01   0.0000000e+00   1.0656854e+02   3.5857864e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   66   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.0656854e+02   3.5857864e+01   0.0000000e+00   9.2426407e+01   5.0000000e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   67   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   5.0000000e+01   0.0000000e+00   7.8284271e+01   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   68   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   6.4142136e+01   0.0000000e+00   6.4142136e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   69   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   7.8284271e+01   0.0000000e+00   5.0000000e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   70   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   5.0000000e+01   9.2426407e+01   0.0000000e+00   3.5857864e+01   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   71   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   3.5857864e+01   1.0656854e+02   0.0000000e+00   2.5936278e+01   1.1649013e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   72   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.2071068e+02   5.0000000e+01   0.0000000e+00   1.0656854e+02   6.4142136e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   73   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   1.0656854e+02   6.4142136e+01   0.0000000e+00   9.2426407e+01   7.8284271e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   74   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   9.2426407e+01   7.8284271e+01   0.0000000e+00   7.8284271e+01   9.2426407e+01   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   75   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   7.8284271e+01   9.2426407e+01   0.0000000e+00   6.4142136e+01   1.0656854e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+   76   4.000000e+00   4.000000e+00   1.000000e-03   1.000000e+03   0.000000e+00   0.000000e+00   6.4142136e+01   1.0656854e+02   0.0000000e+00   5.0000000e+01   1.2071068e+02   0.0000000e+00   1   5.000000e-02   1.000000e+01   1.000000e+00   1.000000e+00   4.000000e-01
+    1   5.0000000e+01  -2.0710678e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    2   6.4142136e+01  -6.5685425e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    3   7.8284271e+01   7.5735931e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    4   9.2426407e+01   2.1715729e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    5   1.0656854e+02   3.5857864e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    6   1.2071068e+02   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    7   2.5936278e+01  -1.6490129e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    8   3.5857864e+01  -6.5685425e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+    9   5.0000000e+01   7.5735931e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   10   6.4142136e+01   2.1715729e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   11   7.8284271e+01   3.5857864e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   12   9.2426407e+01   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   13   1.0656854e+02   6.4142136e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   14   1.1649013e+02   7.4063722e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   15   7.5735931e+00  -6.5685425e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   16   2.1715729e+01   7.5735931e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   17   3.5857864e+01   2.1715729e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   18   5.0000000e+01   3.5857864e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   19   6.4142136e+01   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   20   7.8284271e+01   6.4142136e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   21   9.2426407e+01   7.8284271e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   22   1.0656854e+02   9.2426407e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   23  -6.5685425e+00   7.5735931e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   24   7.5735931e+00   2.1715729e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   25   2.1715729e+01   3.5857864e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   26   3.5857864e+01   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   27   5.0000000e+01   6.4142136e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   28   6.4142136e+01   7.8284271e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   29   7.8284271e+01   9.2426407e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   30   9.2426407e+01   1.0656854e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   31  -1.6490129e+01   2.5936278e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   32  -6.5685425e+00   3.5857864e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   33   7.5735931e+00   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   34   2.1715729e+01   6.4142136e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   35   3.5857864e+01   7.8284271e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   36   5.0000000e+01   9.2426407e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   37   6.4142136e+01   1.0656854e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   38   7.4063722e+01   1.1649013e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   39  -2.0710678e+01   5.0000000e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   40  -6.5685425e+00   6.4142136e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   41   7.5735931e+00   7.8284271e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   42   2.1715729e+01   9.2426407e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   43   3.5857864e+01   1.0656854e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   44   5.0000000e+01   1.2071068e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   45   7.4063722e+01  -1.6490129e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   46  -1.6490129e+01   7.4063722e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   47   9.2426407e+01  -6.5685425e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   48  -6.5685425e+00   9.2426407e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   49   1.0656854e+02   7.5735931e+00   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   50   7.5735931e+00   1.0656854e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   51   1.1649013e+02   2.5936278e+01   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+   52   2.5936278e+01   1.1649013e+02   0.0000000e+00     0     1     0     0
+# iMol, bPrescPress, iConc, bPrescVeloc, dInitConc
+    1     0     1     0   0.000000e+00
+       1.000000e+00   1
+# Concentration Functions - Number of Functions
+    1
+ nFunID, NumPoint
+    1    2
+  0.00e+00  1.00e+00
+  1.00e+03  1.00e+00
+# AutoGen Data
+  AutoModelType,   AutoL0,   nAutoDiv,   bAutoRandom,   dAutoHmax,      bAutoContinuum,       bAutoUniform,  bAutoHomogeniz 
+    0    2.00000e+01     5     0    2.00000e-01     1     0     0    2.00000e+01     5
+  nAutoDirection,   bAutoPinn,   dAutoPinn,   bAutoPout,   dAutoPout,   bAutoCinn,  dAutoCinn,  bAutoCout, dAutoCout, bAutoVout, dAutoVout, bPrescInCont, bPrescWhole, bAutoCinnImm, dAutoCinnImm, bAutoCoutImm, dAutoCoutImm, bPrescInCapImm, bPrescInTissImm
+    0     0    1.00000e+00     0    0.00000e+00     1    1.00000e+00     1    0.00000e+00     0    1.00000e-01     0     0     0     0    1.00000e+00     0    1.00000e+00     0     0
+  dAutoDiam,   dAutoVisc,   dAutoDiff,   dAutoPoros,   dAutoPerme,   dAutoLeak,  dAutoWallD,  dAutoWallThick, nAutoPipeDiv 
+   4.00000e+00    1.00000e-03    1.00000e+03    0.00000e+00    0.00000e+00    5.00000e-02    1.00000e+01    4.00000e-01     1
+  bAutoRandDiam,   dAutoRandDiam,   bAutoRandVisc,   dAutoRandVisc,   bAutoRandWallD,   dAutoRandWallD,  bAutoDiagonal,  dAutoDiamDiag 
+    0    1.00000e+01     0    1.00000e+01     0    1.00000e+01     0    1.00000e-01    1.00000e-02     1    32     4.50000e+01     1
+  bPipeGen,   bPipeGenY,   bGaussianD,   bPipeConn,   bContinDiv 
+  1   1   0   1   0   0   0   1.000000   0   0.000000   0   1.000000   0   0.000000   0   0
+# Time Periods
+ numPer,NPrint,LstPrint,VelCapPrint,MaxIt,IGraph,IForce,dTolConv,dTolLam,VtkPrint
+    1    1    0    0   30    1    0  5.00e-02  1.00e-03    0
+        20  5.00e-02
+# Materials - InitConc, DiffMatNum, ConvMatNum, HeatMatNum
+  0.0000e+00    1    1    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Concentration, Diff. coeff.
+   0.000e+00   1.000e+04
+ D(P) - Num. of pairs
+    1
+ Pairs - Pressure, Darcy coeff.
+   0.000e+00   1.000e+00
+ D(P) - Num. of pairs
+    1
+ Pairs - Temp, Density, SpecHeat, CondCoeff
+   0.000e+00   1.000e+00   2.000e+00   5.000e+00
+# Smeared Data - bSmeared, nType, dVolF, dDiam, dThick, dDiffC, dPart, bPart, bGauss, bRandVF, dRandVF, bSmeTable
+    0    0   1.000e-02   1.000e-01   1.000e-02   1.000e+01   1.000e+00    0    0    0   2.000e+01    0
+# Capillary Smeared model Data - nSmearedInd, bSmeCapConv, dSmeCapVisc, dSmeTisDarcy, dSmeWallLeak, bSmeCapDiff, dSmeCapDiff, bSmeTissDiff, bSmeTissCon
+    0    0   1.000e-03   1.000e-01   5.000e-02    0   1.000e+02   1.000e+01    0    1
+# General Smeared Parameters
+# General Data - Indicators
+ # nDarcyCoeff,nViscPipe,nViscCapill,nHydrPipe,nHydrCapill,nDarcyTens
+    0    0    0    0    0    0
+# General Data - Values
+ # dDarcyCoeff,dViscPipe,dViscCapill,dHydrPipe,dHydrCapill
+  1.000000e+00  1.000000e-03  1.000000e-03  1.000000e+00  1.000000e+00
+# Data for capillary diameters
+ dCapDiamX,m_dCapDiamY, m_dCapDiamZ 
+  1.000000e+00  1.000000e+00  1.000000e+00
+# Molucules and Cells data
+ nMolNumber,nCellNumber
+    1    0
+# Molecule - Indicators
+# nIndPipe,nIndExt,nIndCap,nIndPartPipe,nIndPartCap,nIndAdhePipe,nIndAdheCap,nIndWallPipe,nIndWallCap,nIndWallCap,nIndMolType
+    1    1    1    0    0    0    0    1    1    0
+# Molecule - Values
+# sMolName,dDiffPipe,dDiffExt,dDiffCapX,dDiffCapY,dPartPipe,dPartCap,dAdhePipe,dAdheCap,dDeAdhePipe,dDeAdheCap,dWallPipe,dWallCap,dInitConcPipe,dInitConcExt,dMolarMass
+Mol1  1.000000e+02  1.000000e+04  1.000000e+02  1.000000e+02  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+01  1.000000e+01    0  1.000000e+00    0  1.000000e+00  1.000000e+00  1.000000e+02  1.000000e+00  1.000000e+00  1.000000e+00
+# Cells Params data
+ nCellParamNumber
+    0
+# Smeared Cell Data
+ nSmeCells
+    0
+# Lymphatic System Data
+# bLymDiff, bLymConv,dLymVolFract,dLymVesDiam,dLymHydrCoef,dLymDarTenXX,dLymDarTenYY,dLymDarTenXY,bLymPrescAll,dLymPrescAll
+    0    0  1.000000e-02  1.000000e-01  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00    0  0.000000e+00
+# Tissue Cells, Capillaries and Neurons
+ numCells, numCapillaries, bCells, bCapillaries,bCapPress,dCapPress,nCapPressFun,bCapConce,dCapConce,nCapConceFun
+    1    1    0    0    0  1.00e+00    1    0  1.00e+00    1    1    0
+# nID,     dX,             dY,       ElipseA,       ElipseB,      Angle,    Div, DiffMat, dMaxArea,bInter,b1DMembr,nDifMat1D, bMulti, bInner, nVesicles
+    1   2.00000e+00   2.00000e+00   1.00000e+00   1.00000e+00   4.50000e+01    4    1   1.00000e+00    1    0    1  0  1  1  1 C1
+  bPartOut, dPartOut, bPartInn, dPartInn,  RandX,        RandY,        RandEA,       RandEB,     RandAngle
+    1   2.00000e+00    0   1.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    0    0    0   1.00000e+00
+# VesID,    dX,            dY,       ElipseA,       ElipseB,      Angle,    Div, DiffMat, dMaxArea, nDifMatMem, nMulti
+    1   0.00000e+00   0.00000e+00   2.50000e-01   2.50000e-01   4.50000e+01    4    1   1.00000e+00    1    0
+  bPartit, dPartit, RandX,        RandY,        RandEA,       RandEB,     RandAngle
+    1   2.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00
+# nID,     dX,             dY,       ElipseA,       ElipseB,      Angle,    Div, bWall, dThick, dMaxEA, b1DColl, nFunID, bMulti, nMatID, nType
+    1   2.00000e+00   2.00000e+00   5.00000e-01   5.00000e-01   0.00000e+00   10    1   2.00000e-01   1.00000e+00    0    1  0  1  1  0
+  bPBloodW, dPBloodW, bPWallS, dPWallS, bPColECM, dPColECM, bPWallECM, dPWallECM,  RandX,      RandY,        RandEA,       RandEB,     RandAngle
+    0   1.00000e+00    0   1.00000e+00    0   1.00000e+00    0   1.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00   0.00000e+00    0    1   1.00000e+00
+# nID,     dX,             dY,       ElipseA,       ElipseB,      Angle,    Div, bEpot, dEpot, FunEpot, bCurr, dCurr, FunCurr, bMulti
+    1   2.00000e+00   2.00000e+00   5.00000e-01   5.00000e-01   0.00000e+00    4    0   0.00000e+00    1    0   0.00000e+00    1    0 
+#Eye Model data
+ nEyeRegions
+    0
+#Countour data
+ nEyeContours
+    0
+# Prescribed Data
+ nPrescribed
+    0
+# Eye Mass Function
+ nFunPoints
+    2
+ dTime, dValue
+  0.00e+00  0.00e+00
+  1.00e+03  1.00e+00
+# General Ionic and Electric Data
+ bIonicTrans, bElectrField, bIndIonECS, bIndIonCap
+    0    0    0    0
+# dFaradConst, dTemperature, dGasConstant, dPHExSpace, dEPotCapill, dEPotExCell, dDielConstECS, dEPotPipe, dEPotCape, dSmallFibRv
+   9.64850e-01   3.10000e+02   8.31000e+00   5.00000e+00   0.00000e+00   0.00000e+00   1.00000e-01   0.00000e+00   0.00000e+00   1.00000e-03
+# Flags for electric flow
+ bIndPipee, bIndCapee, bIndExee, bIndCellee, bIndOrgee
+    0    0    1    0    0
+# dGAPipee, dGACapee, dGEXxx, dGEXyy, dGEXzz, dGMPipe, dGMCap, dCapaPipe, dCapaCap
+   1.00000e+05   1.00000e+05   1.00000e+00   1.00000e+00   1.00000e+00   1.00000e+02   1.00000e+02   1.00000e-01   1.00000e-01
+# bIndPipeDia, dPipeDiae, bIndCapDia, dCapDiae, bIndCapGa, bIndTissGa, dCondRatio
+    0   1.00000e-01    0   1.00000e-01    0    0   3.33000e-01
+# bIndIonK, bIndIonNa, bIndIonKPf, bIndIonNaPf, nLenUnits, dEPotEqK, dEPotEqNa, IndNoble, IndOhara,IOharaFull
+    0    0    0    0    1  -1.00000e+02   4.00000e+01    0    0
+# Molecule General Data
+ nMolecules
+    1
+# dValence ,dDissocConst, dAcidValue, dWaterContent, dSorptionKn, dSorptionKd, dConstGamaN, dConstGamaD, dApex, dApdex, bIndIonECS
+   4.00000e+00   1.00000e+00  -1.00000e+00   6.00000e-01   1.00000e-02   3.00000e-02   1.05000e+00   2.05000e+00   3.00000e-02   4.00000e-02    1
+# Cells Params data
+ nCellParamNumber
+    0
+# Cell Electric Parameters
+ nCells
+    0
+# Heart Visualization Parameters (enabled) 
+    0
+# NICHE 3D Model
+    0
+# 1/8 Sphere Model
+    0

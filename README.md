@@ -18,6 +18,8 @@ Various libraries are integrated into CAD, such as Triangle 2D mesh generator (S
   
 **PAKT** direcoty contains PAKT (Transport) solver  
   
-**CAD.exe** - CAD executable file   
+**CAD64.exe and CAD32.exe** - CAD 64-bit and 32-bit executable files   
   
-**CAD Solid and Field - Manual-v1** - manual   
+**CAD Solid and Field - Manual-v1** - manual  
+
+**MSChart Files**  folder with instructions and files needed to display the diagrams 

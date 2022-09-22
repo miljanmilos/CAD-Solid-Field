@@ -1,0 +1,449 @@
+# General Properties
+# SolverType, bCell, bCappNums, bInterCell, bWall, bPartit, bCollagen, CellFlag,bFictWall, bCells, bCaps, bRes, dResVol, dResC, bLineCaps
+    1     1     1     0     0     0     0     3     0     0     0     0  1.00e+002  1.00e+000     0
+# Tissue Properties
+ Domain Type: 0 = 2D, 1 = 3D, Groups, ModelThicknes, nGroupsSub
+         1          1  1.00e+000          0
+# Tissue 3D Data (Direction, Div X, Y, Z, Length X, Y, Z, nDomain, Center X, Y, Z, Rot X, Y Z, bFromSTL)
+    0    3    3    3   1.00000e+002  1.00000e+002  1.00000e+002    2   0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000
+# dMaxArea, dVolFract, bOutRegion, dOuterLen, nOuterDiv, nDiffOutID, dVolFractO, dDiffWallO
+  1.00000e+005  2.50000e-002    1  2.00000e+002    2    2  9.90000e-002  4.00000e+002
+# bConceInl, bConceOut, dConceInl, dConceOut, nFuncInl, nFuncOut, nDiffMat
+    1    0    1    1    1
+# Tissue Cells
+ numCells, numCellsSub, bSubstruct, bGenSubstruct, numCellsGenSub, bGenSubMumps
+    1    0    0    0    0
+# nID,     dX, dY, dZ, ElipseA, ElipseB, ElipseC, AngleX,AngleY,AngleZ,Div,DiffMat,dMaxArea,bInter,b1DMembr,nDifMat1D
+    1  2.00000e+000  2.00000e+000  2.00000e+000  1.00000e+000  1.00000e+000  1.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000    2    1  1.00000e+000    0    0    1  0
+  bPartOut, dPartOut, bPartInn, dPartInn, RandX, RandY, RandZ, RandEA, RandEB, RandEC, RandAnX, RandAnY, RandAnZ
+    0  1.00000e+000    0  1.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000    0
+# Tissue Capillaries
+ numCaps, nLineCaps
+    0     1
+# nID, nPoints, bPartit, dPartit, nDiffMatID, nFunID, dWallThick 
+    1    2    0  1.00000e+000    1    1  1.00000e+000
+ # PointList: nID, dx, dy, dRadius, dWallThick
+    1  2.00000e+000  1.00000e+000  1.00000e+000
+    2  2.00000e+000  3.00000e+000  1.00000e+000
+# Concentration Functions - Number of Functions
+    2
+ nFunID, NumPoint
+    1  302
+ 0.00e+000 0.00e+000
+ 1.00e+000 1.01e+002
+ 2.00e+000 1.77e+002
+ 3.00e+000 2.32e+002
+ 4.00e+000 2.71e+002
+ 5.00e+000 2.99e+002
+ 6.00e+000 3.18e+002
+ 7.00e+000 3.30e+002
+ 8.00e+000 3.36e+002
+ 9.00e+000 3.39e+002
+ 1.00e+001 3.39e+002
+ 1.10e+001 3.36e+002
+ 1.20e+001 3.32e+002
+ 1.30e+001 3.27e+002
+ 1.40e+001 3.20e+002
+ 1.50e+001 3.14e+002
+ 1.60e+001 3.06e+002
+ 1.70e+001 2.99e+002
+ 1.80e+001 2.91e+002
+ 1.90e+001 2.83e+002
+ 2.00e+001 2.76e+002
+ 2.10e+001 2.68e+002
+ 2.20e+001 2.61e+002
+ 2.30e+001 2.53e+002
+ 2.40e+001 2.46e+002
+ 2.50e+001 2.39e+002
+ 2.60e+001 2.32e+002
+ 2.70e+001 2.25e+002
+ 2.80e+001 2.19e+002
+ 2.90e+001 2.12e+002
+ 3.00e+001 2.06e+002
+ 3.10e+001 2.00e+002
+ 3.20e+001 1.94e+002
+ 3.30e+001 1.88e+002
+ 3.40e+001 1.83e+002
+ 3.50e+001 1.77e+002
+ 3.60e+001 1.72e+002
+ 3.70e+001 1.67e+002
+ 3.80e+001 1.62e+002
+ 3.90e+001 1.57e+002
+ 4.00e+001 1.53e+002
+ 4.10e+001 1.48e+002
+ 4.20e+001 1.44e+002
+ 4.30e+001 1.39e+002
+ 4.40e+001 1.35e+002
+ 4.50e+001 1.31e+002
+ 4.60e+001 1.27e+002
+ 4.70e+001 1.24e+002
+ 4.80e+001 1.20e+002
+ 4.90e+001 1.16e+002
+ 5.00e+001 1.13e+002
+ 5.10e+001 1.10e+002
+ 5.20e+001 1.06e+002
+ 5.30e+001 1.03e+002
+ 5.40e+001 1.00e+002
+ 5.50e+001 9.71e+001
+ 5.60e+001 9.43e+001
+ 5.70e+001 9.15e+001
+ 5.80e+001 8.88e+001
+ 5.90e+001 8.61e+001
+ 6.00e+001 8.36e+001
+ 6.10e+001 8.11e+001
+ 6.20e+001 7.87e+001
+ 6.30e+001 7.64e+001
+ 6.40e+001 7.41e+001
+ 6.50e+001 7.19e+001
+ 6.60e+001 6.98e+001
+ 6.70e+001 6.77e+001
+ 6.80e+001 6.57e+001
+ 6.90e+001 6.37e+001
+ 7.00e+001 6.19e+001
+ 7.10e+001 6.00e+001
+ 7.20e+001 5.82e+001
+ 7.30e+001 5.65e+001
+ 7.40e+001 5.48e+001
+ 7.50e+001 5.32e+001
+ 7.60e+001 5.16e+001
+ 7.70e+001 5.01e+001
+ 7.80e+001 4.86e+001
+ 7.90e+001 4.72e+001
+ 8.00e+001 4.58e+001
+ 8.10e+001 4.44e+001
+ 8.20e+001 4.31e+001
+ 8.30e+001 4.18e+001
+ 8.40e+001 4.06e+001
+ 8.50e+001 3.94e+001
+ 8.60e+001 3.82e+001
+ 8.70e+001 3.71e+001
+ 8.80e+001 3.60e+001
+ 8.90e+001 3.49e+001
+ 9.00e+001 3.39e+001
+ 9.10e+001 3.29e+001
+ 9.20e+001 3.19e+001
+ 9.30e+001 3.10e+001
+ 9.40e+001 3.00e+001
+ 9.50e+001 2.91e+001
+ 9.60e+001 2.83e+001
+ 9.70e+001 2.74e+001
+ 9.80e+001 2.66e+001
+ 9.90e+001 2.58e+001
+ 1.00e+002 2.51e+001
+ 1.01e+002 2.43e+001
+ 1.02e+002 2.36e+001
+ 1.03e+002 2.29e+001
+ 1.04e+002 2.22e+001
+ 1.05e+002 2.16e+001
+ 1.06e+002 2.09e+001
+ 1.07e+002 2.03e+001
+ 1.08e+002 1.97e+001
+ 1.09e+002 1.91e+001
+ 1.10e+002 1.86e+001
+ 1.11e+002 1.80e+001
+ 1.12e+002 1.75e+001
+ 1.13e+002 1.70e+001
+ 1.14e+002 1.65e+001
+ 1.15e+002 1.60e+001
+ 1.16e+002 1.55e+001
+ 1.17e+002 1.50e+001
+ 1.18e+002 1.46e+001
+ 1.19e+002 1.42e+001
+ 1.20e+002 1.37e+001
+ 1.21e+002 1.33e+001
+ 1.22e+002 1.29e+001
+ 1.23e+002 1.26e+001
+ 1.24e+002 1.22e+001
+ 1.25e+002 1.18e+001
+ 1.26e+002 1.15e+001
+ 1.27e+002 1.11e+001
+ 1.28e+002 1.08e+001
+ 1.29e+002 1.05e+001
+ 1.30e+002 1.02e+001
+ 1.31e+002 9.87e+000
+ 1.32e+002 9.57e+000
+ 1.33e+002 9.29e+000
+ 1.34e+002 9.01e+000
+ 1.35e+002 8.75e+000
+ 1.36e+002 8.49e+000
+ 1.37e+002 8.24e+000
+ 1.38e+002 7.99e+000
+ 1.39e+002 7.75e+000
+ 1.40e+002 7.52e+000
+ 1.41e+002 7.30e+000
+ 1.42e+002 7.09e+000
+ 1.43e+002 6.88e+000
+ 1.44e+002 6.67e+000
+ 1.45e+002 6.47e+000
+ 1.46e+002 6.28e+000
+ 1.47e+002 6.10e+000
+ 1.48e+002 5.91e+000
+ 1.49e+002 5.74e+000
+ 1.50e+002 5.57e+000
+ 1.51e+002 5.40e+000
+ 1.52e+002 5.24e+000
+ 1.53e+002 5.09e+000
+ 1.54e+002 4.94e+000
+ 1.55e+002 4.79e+000
+ 1.56e+002 4.65e+000
+ 1.57e+002 4.51e+000
+ 1.58e+002 4.38e+000
+ 1.59e+002 4.25e+000
+ 1.60e+002 4.12e+000
+ 1.61e+002 4.00e+000
+ 1.62e+002 3.88e+000
+ 1.63e+002 3.77e+000
+ 1.64e+002 3.65e+000
+ 1.65e+002 3.55e+000
+ 1.66e+002 3.44e+000
+ 1.67e+002 3.34e+000
+ 1.68e+002 3.24e+000
+ 1.69e+002 3.14e+000
+ 1.70e+002 3.05e+000
+ 1.71e+002 2.96e+000
+ 1.72e+002 2.87e+000
+ 1.73e+002 2.79e+000
+ 1.74e+002 2.70e+000
+ 1.75e+002 2.62e+000
+ 1.76e+002 2.55e+000
+ 1.77e+002 2.47e+000
+ 1.78e+002 2.40e+000
+ 1.79e+002 2.33e+000
+ 1.80e+002 2.26e+000
+ 1.81e+002 2.19e+000
+ 1.82e+002 2.13e+000
+ 1.83e+002 2.06e+000
+ 1.84e+002 2.00e+000
+ 1.85e+002 1.94e+000
+ 1.86e+002 1.88e+000
+ 1.87e+002 1.83e+000
+ 1.88e+002 1.77e+000
+ 1.89e+002 1.72e+000
+ 1.90e+002 1.67e+000
+ 1.91e+002 1.62e+000
+ 1.92e+002 1.57e+000
+ 1.93e+002 1.53e+000
+ 1.94e+002 1.48e+000
+ 1.95e+002 1.44e+000
+ 1.96e+002 1.40e+000
+ 1.97e+002 1.35e+000
+ 1.98e+002 1.31e+000
+ 1.99e+002 1.27e+000
+ 2.00e+002 1.24e+000
+ 2.01e+002 1.20e+000
+ 2.02e+002 1.16e+000
+ 2.03e+002 1.13e+000
+ 2.04e+002 1.10e+000
+ 2.05e+002 1.06e+000
+ 2.06e+002 1.03e+000
+ 2.07e+002 1.00e+000
+ 2.08e+002 9.70e-001
+ 2.09e+002 9.40e-001
+ 2.10e+002 9.20e-001
+ 2.11e+002 8.90e-001
+ 2.12e+002 8.60e-001
+ 2.13e+002 8.40e-001
+ 2.14e+002 8.10e-001
+ 2.15e+002 7.90e-001
+ 2.16e+002 7.60e-001
+ 2.17e+002 7.40e-001
+ 2.18e+002 7.20e-001
+ 2.19e+002 7.00e-001
+ 2.20e+002 6.80e-001
+ 2.21e+002 6.60e-001
+ 2.22e+002 6.40e-001
+ 2.23e+002 6.20e-001
+ 2.24e+002 6.00e-001
+ 2.25e+002 5.80e-001
+ 2.26e+002 5.70e-001
+ 2.27e+002 5.50e-001
+ 2.28e+002 5.30e-001
+ 2.29e+002 5.20e-001
+ 2.30e+002 5.00e-001
+ 2.31e+002 4.90e-001
+ 2.32e+002 4.70e-001
+ 2.33e+002 4.60e-001
+ 2.34e+002 4.40e-001
+ 2.35e+002 4.30e-001
+ 2.36e+002 4.20e-001
+ 2.37e+002 4.10e-001
+ 2.38e+002 3.90e-001
+ 2.39e+002 3.80e-001
+ 2.40e+002 3.70e-001
+ 2.41e+002 3.60e-001
+ 2.42e+002 3.50e-001
+ 2.43e+002 3.40e-001
+ 2.44e+002 3.30e-001
+ 2.45e+002 3.20e-001
+ 2.46e+002 3.10e-001
+ 2.47e+002 3.00e-001
+ 2.48e+002 2.90e-001
+ 2.49e+002 2.80e-001
+ 2.50e+002 2.70e-001
+ 2.51e+002 2.70e-001
+ 2.52e+002 2.60e-001
+ 2.53e+002 2.50e-001
+ 2.54e+002 2.40e-001
+ 2.55e+002 2.40e-001
+ 2.56e+002 2.30e-001
+ 2.57e+002 2.20e-001
+ 2.58e+002 2.20e-001
+ 2.59e+002 2.10e-001
+ 2.60e+002 2.00e-001
+ 2.61e+002 2.00e-001
+ 2.62e+002 1.90e-001
+ 2.63e+002 1.90e-001
+ 2.64e+002 1.80e-001
+ 2.65e+002 1.70e-001
+ 2.66e+002 1.70e-001
+ 2.67e+002 1.60e-001
+ 2.68e+002 1.60e-001
+ 2.69e+002 1.60e-001
+ 2.70e+002 1.50e-001
+ 2.71e+002 1.50e-001
+ 2.72e+002 1.40e-001
+ 2.73e+002 1.40e-001
+ 2.74e+002 1.30e-001
+ 2.75e+002 1.30e-001
+ 2.76e+002 1.30e-001
+ 2.77e+002 1.20e-001
+ 2.78e+002 1.20e-001
+ 2.79e+002 1.10e-001
+ 2.80e+002 1.10e-001
+ 2.81e+002 1.10e-001
+ 2.82e+002 1.00e-001
+ 2.83e+002 1.00e-001
+ 2.84e+002 1.00e-001
+ 2.85e+002 1.00e-001
+ 2.86e+002 9.00e-002
+ 2.87e+002 9.00e-002
+ 2.88e+002 9.00e-002
+ 2.89e+002 8.00e-002
+ 2.90e+002 8.00e-002
+ 2.91e+002 8.00e-002
+ 2.92e+002 8.00e-002
+ 2.93e+002 8.00e-002
+ 2.94e+002 7.00e-002
+ 2.95e+002 7.00e-002
+ 2.96e+002 7.00e-002
+ 2.97e+002 7.00e-002
+ 2.98e+002 6.00e-002
+ 2.99e+002 6.00e-002
+ 3.00e+002 6.00e-002
+ 3.01e+002 6.00e-002
+ nFunID, NumPoint
+    2    2
+ 0.00e+000 0.00e+000
+ 1.00e+002 0.00e+000
+# Time Periods
+ numPer,NPrint,LstPrint,MaxIt,IGraph,dTolConv,dTolSub
+    3    1    0   30    1 5.00e-002 5.00e-002
+        20 2.00e+000
+        10 1.00e+000
+        50 5.00e+000
+# Materials - nDiffMatCap, nDiffMatCapWall, nDiffMatInter, nDiffMatCell, nDiffMatCelIn,nDiffMatCellSub
+    3    2    2    2    2    2    2    2    2
+ Domain ID, Num. of curves
+    1    3
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    2    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    3    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    4    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    5    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    6    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    7    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+000  1.000e+000  1.000e+000
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  2.000e+001  2.000e+001  2.000e+001
+ Domain ID, Num. of curves
+    8    2
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+# Autogen - ModelType, Model2DType, nDiffMatCapWall, nDiffMatInter, nDiffMatCell, nDiffMatCelIn 
+    2  1.000e+002  1.000e+002  1.000e+002  1.000e+000  5.000e+000
+  ArcDiv1, ArcDiv2, bAutoWall, dAutoWallThick, bAutoCells, AutoCellDx, AutoCellDy, bAutoCaps, AutoCapDx, AutoCapDy 
+    3    3    3    0  1.000e+000    0    1    1    0    1    1
+# Autogen 3D - ModelType, dAutoAx, dAutoAy, dAutoAz, nAutoTissDiv1, nAutoTissDiv2, nAutoTissDiv3 
+    2  1.000e+002  1.000e+002  1.000e+002    3    3    3
+ bAutoCells, nAutoCellDivX, nAutoCellDivY, nAutoCellDivZ, bAutoOuter, dAutoOutA, nAutoOutDiv, nAutoOutDif, dAutoOutVol, dAutoOutDw,  dAutoOutDt, dAutoTumVol, dAutoTumDw, dAutoTumDt, dAutoThick, dAutoDiam 
+    0    1    1    1    1  2.000e+002    2    2  9.900e-002  4.000e+002  2.000e+001  2.500e-002  4.000e+002  1.000e+000  1.000e+000  1.000e+001
+# Partitioning - bPlasmaWall, dPlasmaWall, bWallInter, dWallInter, bWallSleeve, dWallSleeve, bSleeveInter, dSleeveInter
+    0  1.000e+000    0  1.000e+000    0  1.000e+000    0  1.000e+000
+# Random Parameters - bRandDispl, dRandDispl, bRandElipsA, dRandElipsA, bRandElipsB, bRandElipsB, bRandElipsC, bRandElipsC
+    0  1.000e-001    0  1.000e-001    0  1.000e-001    0  1.000e-001
+  bRandAngAlfa, dRandAngAlfa, bRandAngBeta, dRandAngBeta, bRandAngGama, dRandAngGama, bRandomOut, dRandomOut, bRandGauss
+    0  4.500e+001    0  4.500e+001    0  4.500e+001    0  1.000e-002    0
+# Expanded Cells - bEnabled, dExIncrement, bExRandomIncr, dExMinDistance, nExMaxIteration 
+    1  5.000e-002    0  1.000e-001   50  1.000e-001    0
+# Smeared Data - bSmeared, nType, dVolF, dDiam, dThick, dDiffC, dPart, bPart, bGauss, bRandVF, dRandVF
+    1    0  1.000e-002  1.000e+001  1.000e+000  4.000e+002  1.000e-002    1    0    0  2.000e+001    1  4.530e-001
+# Oxygen Consumption Data - bOxygen, dOxyConsumpt, dOxyCritical, 
+    0  3.000e-004  1.000e-006    0 -6.277e+066  1.000e+000  2.000e-010  4.200e-006    0    0  1.000e-003  1.330e+003  2.000e+000  1.400e-008

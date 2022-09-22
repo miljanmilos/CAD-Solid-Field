@@ -1,0 +1,111 @@
+# General Properties
+# SolverType, bCell, bCappNums, bInterCell, bWall, bPartit, bCollagen, CellFlag,bFictWall, bCells, bCaps, bRes, dResVol, dResC, bLineCaps
+    1     1     1     0     0     0     0     2     0     0     0     0  1.00e+002  1.00e+000     0
+# Fluid Properties
+ Domain Type: 0 = 2D, 1 = 3D, Groups, ModelThicknes, nGroupsSub
+         0          1  1.00e+000          0
+# Tissue2D Data (NumPoints, dMaxArea, DiffMat, Thickness, bCellsInside, bVolSource, nVolFunID, dVolFraction)
+    4   1.000e+002     1   1.000e+000   1.000e+000     1     0     1   5.000e-001     0     0
+    1    0.000e+000    0.000e+000    0.000e+000  0  0  0    0    1.000e+000    2
+    2    6.904e+002    0.000e+000    0.000e+000  1  1  0    0    1.000e+000    2
+    3    6.904e+002    5.134e+002    0.000e+000  0  0  0    0    1.000e+000    1
+    4    0.000e+000    5.134e+002    0.000e+000  1  1  0    0    1.000e+000    1
+# Tissue Cells
+ numCells, numCellsSub, bSubstruct, bGenSubstruct, numCellsGenSub, bGenSubMumps
+    1    0    0    0    0    0
+# nID,     dX,             dY,       ElipseA,       ElipseB,      Angle,    Div, DiffMat, dMaxArea,bInter,b1DMembr,nDifMat1D
+    1  2.00000e+000  2.00000e+000  1.00000e+000  1.00000e+000  4.50000e+001    4    1  1.00000e+000    0    0    1  0
+  bPartOut, dPartOut, bPartInn, dPartInn,  RandX,        RandY,        RandEA,       RandEB,     RandAngle
+    0  1.00000e+000    0  1.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000  0.00000e+000    0
+# Tissue Capillaries
+ numCaps, nLineCaps
+    0     1
+# nID, nPoints, bPartit, dPartit, nDiffMatID, nFunID, dWallThick 
+    1    2    0  1.00000e+000    1    1  1.00000e+000
+ # PointList: nID, dx, dy, dRadius, dWallThick
+    1  2.00000e+000  1.00000e+000  1.00000e+000
+    2  2.00000e+000  3.00000e+000  1.00000e+000
+# Concentration Functions - Number of Functions
+    2
+ nFunID, NumPoint
+    1    2
+ 0.00e+000 1.00e+000
+ 1.00e+005 1.00e+000
+ nFunID, NumPoint
+    2    2
+ 0.00e+000 0.00e+000
+ 1.00e+005 0.00e+000
+# Time Periods
+ numPer,NPrint,LstPrint,MaxIt,IGraph,dTolConv,dTolSub
+    1    1    0   30    1 5.00e-002 5.00e-002
+        10 1.00e+002
+# Materials - nDiffMatCap, nDiffMatCapWall, nDiffMatInter, nDiffMatCell, nDiffMatCelIn,nDiffMatCellSub
+    1    1    1    1    1    1    1    1    1
+ Domain ID, Num. of curves
+    1    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    2    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    3    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    4    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    5    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    6    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    7    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+ Domain ID, Num. of curves
+    8    1
+ D(C) - Num. of pairs
+    1
+ Pairs - Conc, DiffX, DiffY, DiffZ
+  0.000e+000  1.000e+002  1.000e+002  1.000e+002
+# Autogen - ModelType, Model2DType, nDiffMatCapWall, nDiffMatInter, nDiffMatCell, nDiffMatCelIn 
+    2  4.000e+000  4.000e+000  4.000e+000  1.000e+000  5.000e+000
+  ArcDiv1, ArcDiv2, bAutoWall, dAutoWallThick, bAutoCells, AutoCellDx, AutoCellDy, bAutoCaps, AutoCapDx, AutoCapDy 
+    3    3    3    0  1.000e+000    0    1    1    0    1    1
+# Autogen 3D - ModelType, dAutoAx, dAutoAy, dAutoAz, nAutoTissDiv1, nAutoTissDiv2, nAutoTissDiv3 
+    0  1.000e+002  1.000e+002  1.000e+002    2    2    2
+ bAutoCells, nAutoCellDivX, nAutoCellDivY, nAutoCellDivZ, bAutoOuter, dAutoOutA, nAutoOutDiv, nAutoOutDif, dAutoOutVol, dAutoOutDw 
+    0    1    1    1    1  2.000e+002    1    2  1.000e-003  1.000e+002
+# Partitioning - bPlasmaWall, dPlasmaWall, bWallInter, dWallInter, bWallSleeve, dWallSleeve, bSleeveInter, dSleeveInter
+    0  1.000e+000    0  1.000e+000    0  1.000e+000    0  1.000e+000
+# Random Parameters - bRandDispl, dRandDispl, bRandElipsA, dRandElipsA, bRandElipsB, bRandElipsB, bRandElipsC, bRandElipsC
+    0  1.000e-001    0  1.000e-001    0  1.000e-001    0  1.000e-001
+  bRandAngAlfa, dRandAngAlfa, bRandAngBeta, dRandAngBeta, bRandAngGama, dRandAngGama, bRandomOut, dRandomOut, bRandGauss
+    0  4.500e+001    0  4.500e+001    0  4.500e+001    0  1.000e-002    0
+# Expanded Cells - bEnabled, dExIncrement, bExRandomIncr, dExMinDistance, nExMaxIteration 
+    1  5.000e-002    0  1.000e-001   50  1.000e-001    0
+# Smeared Data - bSmeared, nType, dVolF, dDiam, dThick, dDiffC, dPart, bPart, bGauss, bRandVF, dRandVF
+    0    0  5.000e-001  1.000e+000  1.000e+000  1.000e+000  1.000e+000    0    0    0  2.000e+001
+# Oxygen Consumption Data - bOxygen, dOxyConsumpt, dOxyCritical, 
+    0  3.000e-004  1.000e-006    0 -6.277e+066  1.000e+000
